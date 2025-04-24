@@ -1,0 +1,5 @@
+.auth/
+
+poetry.lock
+
+**/__pycache__/**
