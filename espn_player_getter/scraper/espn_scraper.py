@@ -1,19 +1,16 @@
-from typing import Dict, List, Optional
+from typing import Dict, List
 
-from playwright.sync_api import Page, sync_playwright
+from playwright.sync_api import sync_playwright
 
 from espn_player_getter.models.player import Player
-
-# Constants
-ESPN_URL = "https://fantasy.espn.com/baseball/players/projections"
-
+from espn_player_getter.auth.login import login_to_espn, ESPN_URL
 
 class ESPNScraper:
     """Scraper for ESPN Fantasy Baseball player data."""
-    
+
     def __init__(self, headless: bool = True):
         """Initialize the scraper.
-        
+
         Args:
             headless: Whether to run browser in headless mode
         """
@@ -21,58 +18,42 @@ class ESPNScraper:
         self.playwright = None
         self.browser = None
         self.page = None
-    
+
     def __enter__(self):
         """Start Playwright session when entering context."""
         self.playwright = sync_playwright().start()
         self.browser = self.playwright.chromium.launch(headless=self.headless)
         self.page = self.browser.new_page()
         return self
-    
+
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Close browser and stop Playwright when exiting context."""
         if self.browser:
             self.browser.close()
         if self.playwright:
             self.playwright.stop()
-    
+
     def login(self, credentials: Dict[str, str]) -> None:
         """Log in to ESPN Fantasy Baseball.
-        
+
         Args:
             credentials: Dictionary containing username and password
         """
-        username = credentials.get("username")
-        password = credentials.get("password")
-        
-        if not username or not password:
-            print("Warning: Empty credentials provided, continuing without login")
-            return
-            
-        print("Logging in to ESPN Fantasy Baseball...")
-        
-        # TODO: Implement actual login logic based on ESPN's login form
-        # This will need to be customized based on actual page structure
-        # Example implementation:
-        # self.page.click("button:has-text('Login')")
-        # self.page.fill('input[name="username"]', username)
-        # self.page.fill('input[name="password"]', password)
-        # self.page.click('button:has-text("Log In")')
-        # self.page.wait_for_navigation()
-    
+        login_to_espn(self.page, credentials)
+
     def scrape_players(self) -> List[Player]:
         """Scrape player data from ESPN Fantasy Baseball.
-        
+
         Returns:
             List of Player objects
         """
         print("Navigating to ESPN Fantasy Baseball...")
         self.page.goto(ESPN_URL)
         self.page.wait_for_load_state("networkidle")
-        
+
         print("Scraping player data...")
         players = []
-        
+
         # TODO: Implement actual scraping logic based on ESPN's page structure
         # This will need to be customized based on actual page structure
         # Example implementation:
@@ -92,5 +73,5 @@ class ESPNScraper:
         #         position=position,
         #         eligible_positions=eligible_positions
         #     ))
-        
+
         return players
