@@ -11,6 +11,7 @@ class Player:
     position: str
     eligible_positions: List[str]
     is_starter: bool = False
+    player_type: str = ""  # 'batter' or 'pitcher'
     stats: Optional[dict] = None
     
     def to_dict(self) -> dict:
@@ -22,6 +23,7 @@ class Player:
             "position": self.position,
             "eligible_positions": self.eligible_positions,
             "is_starter": self.is_starter,
+            "player_type": self.player_type,
             "stats": self.stats
         }
     
@@ -35,5 +37,6 @@ class Player:
             position=data["position"],
             eligible_positions=data["eligible_positions"],
             is_starter=data.get("is_starter", False),
+            player_type=data.get("player_type", ""),
             stats=data.get("stats")
         )
