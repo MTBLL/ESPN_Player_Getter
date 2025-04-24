@@ -1,5 +1,7 @@
 # ESPN Player Getter
 
+[![codecov](https://codecov.io/gh/YOUR_GITHUB_USERNAME/ESPN_Player_Getter/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_GITHUB_USERNAME/ESPN_Player_Getter)
+
 A command-line tool to scrape ESPN Fantasy Baseball Player information using Playwright. This tool serves as the foundation for the MTBL Player Database.
 
 ## Installation
