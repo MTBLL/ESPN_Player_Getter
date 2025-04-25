@@ -1,5 +1,5 @@
-from dataclasses import dataclass
-from typing import List, Optional
+from dataclasses import dataclass, field
+from typing import List, Optional, Dict
 
 
 @dataclass
@@ -10,9 +10,9 @@ class Player:
     team: str
     position: str
     eligible_positions: List[str]
-    is_starter: bool = False
-    player_type: str = ""  # 'batter' or 'pitcher'
     stats: Optional[dict] = None
+    image_url: str = ""
+    bio_data: Dict[str, str] = field(default_factory=dict)
     
     def to_dict(self) -> dict:
         """Convert player to dictionary representation."""
@@ -22,9 +22,9 @@ class Player:
             "team": self.team,
             "position": self.position,
             "eligible_positions": self.eligible_positions,
-            "is_starter": self.is_starter,
-            "player_type": self.player_type,
-            "stats": self.stats
+            "stats": self.stats,
+            "image_url": self.image_url,
+            "bio_data": self.bio_data
         }
     
     @classmethod
@@ -36,7 +36,7 @@ class Player:
             team=data["team"],
             position=data["position"],
             eligible_positions=data["eligible_positions"],
-            is_starter=data.get("is_starter", False),
-            player_type=data.get("player_type", ""),
-            stats=data.get("stats")
+            stats=data.get("stats"),
+            image_url=data.get("image_url", ""),
+            bio_data=data.get("bio_data", {})
         )

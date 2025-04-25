@@ -94,6 +94,37 @@ def update_player_database():
 - The scraper navigates to ESPN's fantasy baseball projections page and scrapes both batters and pitchers.
 - By default, it captures up to 500 players in each category (batters and pitchers).
 - The scraper handles pagination automatically.
-- Player data includes name, team, position, and eligible positions.
+- Player data includes:
+  - Basic info: name, team, position, and eligible positions
+  - Player image URL
+  - Biographical data:
+    - Height and weight
+    - Birthdate and age
+    - Batting/throwing orientation
+    - Birthplace
+    - Player status
 - Make sure to regularly update the scraping logic as ESPN may change their website structure over time.
 - You may need to handle rate limiting, captchas, or other anti-scraping measures.
+
+## Data Format Example
+
+The scraped player data is saved in JSON format. Here's an example of the data structure for a player:
+
+```json
+{
+  "id": "39832",
+  "name": "Shohei Ohtani",
+  "team": "Los Angeles Dodgers",
+  "position": "DH",
+  "eligible_positions": ["DH"],
+  "stats": null,
+  "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png&w=350&h=254",
+  "bio_data": {
+    "height_weight": "6' 3\", 210 lbs",
+    "birthdate": "7/5/1994 (30)",
+    "bat_throw": "Left/Right",
+    "birthplace": "Oshu, Japan",
+    "status": "Active"
+  }
+}
+```

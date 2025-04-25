@@ -11,8 +11,15 @@ def test_player_to_dict():
         team="LAA",
         position="CF",
         eligible_positions=["CF", "OF"],
-        is_starter=True,
-        stats={"HR": 40, "AVG": 0.300}
+        stats={"HR": 40, "AVG": 0.300},
+        image_url="https://example.com/image.png",
+        bio_data={
+            "height_weight": "6' 2\", 235 lbs",
+            "birthdate": "8/7/1991 (32)",
+            "bat_throw": "Right/Right",
+            "birthplace": "Vineland, NJ",
+            "status": "Active"
+        }
     )
     
     player_dict = player.to_dict()
@@ -22,8 +29,13 @@ def test_player_to_dict():
     assert player_dict["team"] == "LAA"
     assert player_dict["position"] == "CF"
     assert player_dict["eligible_positions"] == ["CF", "OF"]
-    assert player_dict["is_starter"] == True
     assert player_dict["stats"] == {"HR": 40, "AVG": 0.300}
+    assert player_dict["image_url"] == "https://example.com/image.png"
+    assert player_dict["bio_data"]["height_weight"] == "6' 2\", 235 lbs"
+    assert player_dict["bio_data"]["birthdate"] == "8/7/1991 (32)"
+    assert player_dict["bio_data"]["bat_throw"] == "Right/Right"
+    assert player_dict["bio_data"]["birthplace"] == "Vineland, NJ"
+    assert player_dict["bio_data"]["status"] == "Active"
 
 
 def test_player_from_dict():
@@ -34,8 +46,15 @@ def test_player_from_dict():
         "team": "LAA",
         "position": "CF",
         "eligible_positions": ["CF", "OF"],
-        "is_starter": True,
-        "stats": {"HR": 40, "AVG": 0.300}
+        "stats": {"HR": 40, "AVG": 0.300},
+        "image_url": "https://example.com/image.png",
+        "bio_data": {
+            "height_weight": "6' 2\", 235 lbs",
+            "birthdate": "8/7/1991 (32)",
+            "bat_throw": "Right/Right",
+            "birthplace": "Vineland, NJ",
+            "status": "Active"
+        }
     }
     
     player = Player.from_dict(player_dict)
@@ -45,8 +64,13 @@ def test_player_from_dict():
     assert player.team == "LAA"
     assert player.position == "CF"
     assert player.eligible_positions == ["CF", "OF"]
-    assert player.is_starter == True
     assert player.stats == {"HR": 40, "AVG": 0.300}
+    assert player.image_url == "https://example.com/image.png"
+    assert player.bio_data["height_weight"] == "6' 2\", 235 lbs"
+    assert player.bio_data["birthdate"] == "8/7/1991 (32)"
+    assert player.bio_data["bat_throw"] == "Right/Right"
+    assert player.bio_data["birthplace"] == "Vineland, NJ"
+    assert player.bio_data["status"] == "Active"
 
 
 def test_player_from_dict_minimal():
@@ -66,5 +90,6 @@ def test_player_from_dict_minimal():
     assert player.team == "NYY"
     assert player.position == "RF"
     assert player.eligible_positions == ["RF", "OF"]
-    assert player.is_starter == False
     assert player.stats is None
+    assert player.image_url == ""
+    assert player.bio_data == {}

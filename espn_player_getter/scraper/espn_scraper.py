@@ -57,9 +57,7 @@ class ESPNScraper:
         batters = self._scrape_player_category(player_limit)
         print(f"Scraped {len(batters)} batters")
 
-        # Add player_type field to batters
-        for player in batters:
-            player.player_type = "batter"
+        # Add batters to all players
         all_players.extend(batters)
 
         # Switch to pitchers tab
@@ -72,9 +70,7 @@ class ESPNScraper:
         pitchers = self._scrape_player_category(player_limit)
         print(f"Scraped {len(pitchers)} pitchers")
 
-        # Add player_type field to pitchers
-        for player in pitchers:
-            player.player_type = "pitcher"
+        # Add pitchers to all players
         all_players.extend(pitchers)
 
         print(f"Total players scraped: {len(all_players)}")
@@ -166,7 +162,13 @@ class ESPNScraper:
 
                 # Close the player modal if it's still open
                 if self.page.is_visible('div[role="dialog"]'):
-                    self.page.press("Escape", key="Enter")
+                    # Try clicking the close button first
+                    close_button = self.page.locator('button[class*="closebtn"]')
+                    if close_button.count() > 0:
+                        close_button.click()
+                    else:
+                        # Fallback to pressing Escape key
+                        self.page.keyboard.press("Escape")
 
                 print(f"Scraped player: {player_name}")
 
@@ -190,7 +192,20 @@ class ESPNScraper:
 
         # Get player ID from URL
         url = page.url
-        player_id = url.split("/")[-1]
+        
+        # Extract ID from URL - format is typically /id/12345/player-name
+        url_parts = url.split("/")
+        player_id = None
+        
+        # Find "id" in URL parts and get the next element
+        for i, part in enumerate(url_parts):
+            if part == "id" and i < len(url_parts) - 1:
+                player_id = url_parts[i + 1]
+                break
+                
+        # Fallback to last part if not found
+        if not player_id:
+            player_id = url_parts[-1]
 
         # Get player name
         name = player_header.locator("h1").inner_text()
@@ -215,10 +230,46 @@ class ESPNScraper:
         eligible_positions = [pos.strip() for pos in position.split(",")]
         primary_position = eligible_positions[0] if eligible_positions else ""
 
+        # Get player image URL
+        image_url = ""
+        headshot_img = player_header.locator('figure.PlayerHeader__HeadShot img')
+        if headshot_img.count() > 0:
+            image_url = headshot_img.get_attribute("src") or ""
+        
+        # Extract bio data from the PlayerHeader__Bio section
+        bio_data = {}
+        bio_list = player_header.locator('ul.PlayerHeader__Bio_List li')
+        
+        for i in range(bio_list.count()):
+            bio_item = bio_list.nth(i)
+            label_element = bio_item.locator('div.ttu')
+            value_element = bio_item.locator('div.fw-medium')
+            
+            if label_element.count() > 0 and value_element.count() > 0:
+                label = label_element.inner_text().strip()
+                value = value_element.inner_text().strip()
+                
+                # Normalize the keys to be consistent
+                if label.upper() == "HT/WT":
+                    bio_data["height_weight"] = value
+                elif label.upper() == "BIRTHDATE":
+                    bio_data["birthdate"] = value
+                elif label.upper() == "BAT/THR":
+                    bio_data["bat_throw"] = value
+                elif label.upper() == "BIRTHPLACE":
+                    bio_data["birthplace"] = value
+                elif label.upper() == "STATUS":
+                    bio_data["status"] = value
+                else:
+                    # For any other fields that might be added in the future
+                    bio_data[label.lower()] = value
+
         return Player(
             id=player_id,
             name=name,
             team=team,
             position=primary_position,
             eligible_positions=eligible_positions,
+            image_url=image_url,
+            bio_data=bio_data,
         )
