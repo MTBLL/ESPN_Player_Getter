@@ -2,9 +2,12 @@ from typing import List
 
 from playwright.sync_api import Page, sync_playwright
 
+import espn_player_getter.scraper.elements as E
 from espn_player_getter.models.player import Player
 
 ESPN_URL = "https://fantasy.espn.com/baseball/players/projections"
+
+DOM_LOADED = "domcontentloaded"
 
 
 class ESPNScraper:
@@ -47,14 +50,14 @@ class ESPNScraper:
         print("Navigating to ESPN Fantasy Baseball players page...")
         assert self.page, "Page object is not initialized"
         self.page.goto(ESPN_URL)
-        self.page.wait_for_load_state("networkidle")
+        self.page.wait_for_load_state(DOM_LOADED)
 
         print("Scraping player data...")
         all_players = []
 
         # First scrape batters (default tab)
         print("Scraping BATTERS...")
-        batters = self._scrape_player_category(player_limit)
+        batters = self._scrape_player_tables(player_limit)
         print(f"Scraped {len(batters)} batters")
 
         # Add batters to all players
@@ -63,11 +66,11 @@ class ESPNScraper:
         # Switch to pitchers tab
         print("Switching to PITCHERS tab...")
         self.page.click('label:has-text("Pitchers")')
-        self.page.wait_for_load_state("networkidle")
+        self.page.wait_for_load_state(DOM_LOADED)
 
         # Then scrape pitchers
         print("Scraping PITCHERS...")
-        pitchers = self._scrape_player_category(player_limit)
+        pitchers = self._scrape_player_tables(player_limit)
         print(f"Scraped {len(pitchers)} pitchers")
 
         # Add pitchers to all players
@@ -76,7 +79,7 @@ class ESPNScraper:
         print(f"Total players scraped: {len(all_players)}")
         return all_players
 
-    def _scrape_player_category(self, player_limit: int = 500) -> List[Player]:
+    def _scrape_player_tables(self, player_limit: int = 500) -> List[Player]:
         """Scrape players from the current category tab (batters or pitchers).
 
         Args:
@@ -105,10 +108,10 @@ class ESPNScraper:
 
             # Check if there's a next page and navigate to it
             assert self.page, "Page object is None"
-            next_button = self.page.locator('button[class*="next"]')
+            next_button = self.page.locator(E.BTN_NEXT)
             if next_button.count() > 0 and next_button.is_enabled():
                 next_button.click()
-                self.page.wait_for_load_state("networkidle")
+                self.page.wait_for_load_state(DOM_LOADED)
                 page_num += 1
             else:
                 has_next_page = False
@@ -126,10 +129,10 @@ class ESPNScraper:
 
         # Get the player table
         assert self.page, "Page object is None"
-        players_table = self.page.locator('div[class*="players-table"]')
+        players_table = self.page.locator(E.PLAYERS_TABLE)
 
         # Get all player rows
-        player_rows = players_table.locator('div[class*="player-info-section"]')
+        player_rows = players_table.locator(E.PLAYER_ROW)
         player_count = player_rows.count()
 
         print(f"Found {player_count} players on current page")
@@ -140,18 +143,19 @@ class ESPNScraper:
                 player_row = player_rows.nth(i)
 
                 # Find and click the player name element to open the player card
-                player_name_element = player_row.locator('div[class*="player-name"] a')
+                player_name_element = player_row.locator(E.LINK_PLAYER_NAME)
                 player_name = player_name_element.inner_text()
 
                 # Click to open the player modal
                 player_name_element.click()
-                self.page.wait_for_selector('text="Complete Stats"')
+                LINK_COMPLETE_STATS = 'text="Complete Stats"'
+                self.page.wait_for_selector(LINK_COMPLETE_STATS)
 
                 # Open Complete Stats in a new page
                 with self.page.context.expect_page() as new_page_info:
-                    self.page.click('text="Complete Stats"')
+                    self.page.click(LINK_COMPLETE_STATS)
                 player_page = new_page_info.value
-                player_page.wait_for_load_state("networkidle")
+                player_page.wait_for_load_state(DOM_LOADED)
 
                 # Scrape player info from the player page
                 player_data = self._scrape_player_data(player_page)
@@ -188,41 +192,45 @@ class ESPNScraper:
             Player object with scraped data
         """
         # Get player header div
-        player_header = page.locator("div.PlayerHeader")
+        player_header = page.locator(E.PLAYER_HEADER)
 
         # Get player ID from URL
         url = page.url
-        
+
         # Extract ID from URL - format is typically /id/12345/player-name
         url_parts = url.split("/")
         player_id = None
-        
+
         # Find "id" in URL parts and get the next element
         for i, part in enumerate(url_parts):
             if part == "id" and i < len(url_parts) - 1:
                 player_id = url_parts[i + 1]
                 break
-                
+
         # Fallback to last part if not found
         if not player_id:
             player_id = url_parts[-1]
 
-        # Get player name
-        name = player_header.locator("h1").inner_text()
+        # Get player image URL && player name
+        image_url = ""
+        name = ""
+        headshot_img = player_header.locator(E.IMG_PLAYER)
+        if headshot_img.count() > 0:
+            image_url = headshot_img.get_attribute("src") or ""
+            # Get player name
+            name = headshot_img.get_attribute("alt")
 
         # Get team name
-        team_element = player_header.locator('li:has-text("Team")')
-        team = (
-            team_element.inner_text().replace("Team", "").strip()
-            if team_element.count() > 0
-            else ""
-        )
+        team_element = player_header.locator(E.PLAYER_TEAM)
+        team = team_element.get_attribute("alt")
+        if not team:
+            team = ""
 
         # Get player position
-        position_element = player_header.locator('li:has-text("Position")')
+        player_info = player_header.locator(E.PLAYER_POS_INFO)
         position = (
-            position_element.inner_text().replace("Position", "").strip()
-            if position_element.count() > 0
+            player_info.locator("li").nth(2).inner_text()
+            if player_info.count() > 0
             else ""
         )
 
@@ -230,39 +238,42 @@ class ESPNScraper:
         eligible_positions = [pos.strip() for pos in position.split(",")]
         primary_position = eligible_positions[0] if eligible_positions else ""
 
-        # Get player image URL
-        image_url = ""
-        headshot_img = player_header.locator('figure.PlayerHeader__HeadShot img')
-        if headshot_img.count() > 0:
-            image_url = headshot_img.get_attribute("src") or ""
-        
         # Extract bio data from the PlayerHeader__Bio section
-        bio_data = {}
-        bio_list = player_header.locator('ul.PlayerHeader__Bio_List li')
-        
+        bio_data_raw = {}
+        bio_list = player_header.locator(E.PLAYER_BIO_LIST)
+
         for i in range(bio_list.count()):
-            bio_item = bio_list.nth(i)
-            label_element = bio_item.locator('div.ttu')
-            value_element = bio_item.locator('div.fw-medium')
-            
-            if label_element.count() > 0 and value_element.count() > 0:
-                label = label_element.inner_text().strip()
-                value = value_element.inner_text().strip()
-                
-                # Normalize the keys to be consistent
-                if label.upper() == "HT/WT":
-                    bio_data["height_weight"] = value
-                elif label.upper() == "BIRTHDATE":
-                    bio_data["birthdate"] = value
-                elif label.upper() == "BAT/THR":
-                    bio_data["bat_throw"] = value
-                elif label.upper() == "BIRTHPLACE":
-                    bio_data["birthplace"] = value
-                elif label.upper() == "STATUS":
-                    bio_data["status"] = value
-                else:
-                    # For any other fields that might be added in the future
-                    bio_data[label.lower()] = value
+            li_item = bio_list.nth(i)
+
+            # Get the two divs - first is label, second is value
+            divs = li_item.locator("div")
+
+            # Make sure we have both divs
+            if divs.count() >= 2:
+                label = (
+                    divs.nth(0).inner_text().strip().upper()
+                )  # First div - the label (uppercase for consistency)
+                value = divs.nth(1).inner_text().strip()  # Second div - the value
+
+                # Add to dictionary with the raw label as key
+                bio_data_raw[label] = value
+
+        bio_data = {}
+        field_mapping = {
+            "HT/WT": "height_weight",
+            "BIRTHDATE": "birthdate",
+            "BAT/THR": "bat_throw",
+            "BIRTHPLACE": "birthplace",
+            "STATUS": "status",
+        }
+        for raw_key, value in bio_data_raw.items():
+            if raw_key == "BIRTHDATE":
+                value = value.split(" ")[0].strip()
+            if raw_key in field_mapping:
+                bio_data[field_mapping[raw_key]] = value
+            else:
+                # For any fields not in our mapping, use lowercase version of original key
+                bio_data[raw_key.lower()] = value
 
         return Player(
             id=player_id,
