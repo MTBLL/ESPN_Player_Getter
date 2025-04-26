@@ -1,3 +1,5 @@
+import re
+from time import sleep
 from typing import List
 
 from playwright.sync_api import Page, sync_playwright
@@ -6,6 +8,7 @@ import espn_player_getter.scraper.elements as E
 from espn_player_getter.models.player import Player
 
 ESPN_URL = "https://fantasy.espn.com/baseball/players/projections"
+ESPN_PLAYER_URL = "https://www.espn.com/mlb/player/stats/_/id/{player_id}/"
 
 DOM_LOADED = "domcontentloaded"
 
@@ -48,7 +51,9 @@ class ESPNScraper:
             List of Player objects
         """
         print("Navigating to ESPN Fantasy Baseball players page...")
+        self.__enter__()
         assert self.page, "Page object is not initialized"
+        breakpoint()
         self.page.goto(ESPN_URL)
         self.page.wait_for_load_state(DOM_LOADED)
 
@@ -76,8 +81,12 @@ class ESPNScraper:
         # Add pitchers to all players
         all_players.extend(pitchers)
 
-        print(f"Total players scraped: {len(all_players)}")
-        return all_players
+        # Now complete player details by visiting individual player pages
+        print("Completing player details...")
+        completed_players = self._complete_player_details(all_players)
+
+        print(f"Total players scraped: {len(completed_players)}")
+        return completed_players
 
     def _scrape_player_tables(self, player_limit: int = 500) -> List[Player]:
         """Scrape players from the current category tab (batters or pitchers).
@@ -86,7 +95,7 @@ class ESPNScraper:
             player_limit: Maximum number of players to scrape
 
         Returns:
-            List of Player objects
+            List of Player objects with basic data
         """
         players = []
         page_num = 1
@@ -120,18 +129,24 @@ class ESPNScraper:
         return players
 
     def _process_current_page(self) -> List[Player]:
-        """Process the current page of players.
+        """Process the current page of players, extracting basic data from rows.
 
         Returns:
-            List of Player objects from the current page
+            List of Player objects with basic data
         """
         current_page_players = []
+        player_table_loaded = False
+        players_table = None
 
         # Get the player table
         assert self.page, "Page object is None"
-        players_table = self.page.locator(E.PLAYERS_TABLE)
+        while not player_table_loaded:
+            players_table = self.page.locator(E.PLAYERS_TABLE)
+            player_table_loaded = players_table.is_visible()
+            sleep(0.1)
 
         # Get all player rows
+        assert players_table, "Players table is None"
         player_rows = players_table.locator(E.PLAYER_ROW)
         player_count = player_rows.count()
 
@@ -141,102 +156,114 @@ class ESPNScraper:
             try:
                 # Get the row element
                 player_row = player_rows.nth(i)
+                player_row.scroll_into_view_if_needed()
 
-                # Find and click the player name element to open the player card
+                # Get player name
                 player_name_element = player_row.locator(E.LINK_PLAYER_NAME)
                 player_name = player_name_element.inner_text()
 
-                # Click to open the player modal
-                player_name_element.click()
-                LINK_COMPLETE_STATS = 'text="Complete Stats"'
-                self.page.wait_for_selector(LINK_COMPLETE_STATS)
+                # Get player ID and image URL from headshot
+                player_id = ""
+                image_url = ""
+                headshot_img = player_row.locator(E.PLAYER_HEADSHOT)
+                if headshot_img.count() > 0:
+                    src = headshot_img.get_attribute("src") or ""
+                    # Extract player ID from image URL (e.g., "/i/headshots/mlb/players/full/39832.png")
+                    if src:
+                        image_url = src
+                        match = re.search(r"/full/(\d+)\.png", src)
+                        if match:
+                            player_id = match.group(1)
 
-                # Open Complete Stats in a new page
-                with self.page.context.expect_page() as new_page_info:
-                    self.page.click(LINK_COMPLETE_STATS)
-                player_page = new_page_info.value
-                player_page.wait_for_load_state(DOM_LOADED)
+                # Get team name
+                team = ""
+                team_logo = player_row.locator(E.PLAYER_TEAM_LOGO)
+                if team_logo.count() > 0:
+                    team = team_logo.get_attribute("alt") or ""
 
-                # Scrape player info from the player page
-                player_data = self._scrape_player_data(player_page)
-                current_page_players.append(player_data)
+                # Get player positions
+                positions = []
+                positions_element = player_row.locator(E.PLAYER_POSITIONS)
+                if positions_element.count() > 0:
+                    positions_text = positions_element.inner_text()
+                    positions = [pos.strip() for pos in positions_text.split(",")]
 
-                # Close the player page
-                player_page.close()
+                # Create player object with data from row
+                player = Player(
+                    id=player_id,
+                    name=player_name,
+                    team=team,
+                    position=positions[0] if positions else "",
+                    eligible_positions=positions,
+                    image_url=image_url,
+                    bio_data={},
+                )
 
-                # Close the player modal if it's still open
-                if self.page.is_visible('div[role="dialog"]'):
-                    # Try clicking the close button first
-                    close_button = self.page.locator('button[class*="closebtn"]')
-                    if close_button.count() > 0:
-                        close_button.click()
-                    else:
-                        # Fallback to pressing Escape key
-                        self.page.keyboard.press("Escape")
-
-                print(f"Scraped player: {player_name}")
+                current_page_players.append(player)
+                print(f"Added player from row: {player_name} (ID: {player_id})")
 
             except Exception as e:
-                print(f"Error scraping player: {e}")
+                print(f"Error processing player row: {e}")
                 continue
 
         return current_page_players
 
-    def _scrape_player_data(self, page: Page) -> Player:
-        """Scrape player data from the player page.
+    def _complete_player_details(self, players: List[Player]) -> List[Player]:
+        """Complete player details by visiting individual player pages.
+
+        Args:
+            players: List of Player objects with basic data
+
+        Returns:
+            List of Player objects with complete data
+        """
+        completed_players = []
+
+        for player in players:
+            if not player.id:
+                print(f"Skipping player without ID: {player.name}")
+                continue
+
+            try:
+                print(f"Completing details for player: {player.name} (ID: {player.id})")
+
+                # Create player page URL
+                player_url = ESPN_PLAYER_URL.format(player_id=player.id)
+
+                # Open player page in a new page
+                player_page = self.browser.new_page()
+                player_page.goto(player_url)
+                player_page.wait_for_load_state(DOM_LOADED)
+
+                # Get bio data for the player
+                bio_data = self._scrape_player_bio(player_page)
+                player.bio_data = bio_data
+
+                # Close the player page
+                player_page.close()
+
+                completed_players.append(player)
+                print(f"Completed details for player: {player.name}")
+
+            except Exception as e:
+                print(f"Error completing details for player {player.name}: {e}")
+                # Add the player with incomplete data anyway
+                completed_players.append(player)
+                continue
+
+        return completed_players
+
+    def _scrape_player_bio(self, page: Page) -> dict:
+        """Scrape player bio data from the player page.
 
         Args:
             page: The Playwright page object for the player page
 
         Returns:
-            Player object with scraped data
+            Dictionary with player bio data
         """
         # Get player header div
         player_header = page.locator(E.PLAYER_HEADER)
-
-        # Get player ID from URL
-        url = page.url
-
-        # Extract ID from URL - format is typically /id/12345/player-name
-        url_parts = url.split("/")
-        player_id = None
-
-        # Find "id" in URL parts and get the next element
-        for i, part in enumerate(url_parts):
-            if part == "id" and i < len(url_parts) - 1:
-                player_id = url_parts[i + 1]
-                break
-
-        # Fallback to last part if not found
-        if not player_id:
-            player_id = url_parts[-1]
-
-        # Get player image URL && player name
-        image_url = ""
-        name = ""
-        headshot_img = player_header.locator(E.IMG_PLAYER)
-        if headshot_img.count() > 0:
-            image_url = headshot_img.get_attribute("src") or ""
-            # Get player name
-            name = headshot_img.get_attribute("alt")
-
-        # Get team name
-        team_element = player_header.locator(E.PLAYER_TEAM)
-        team = team_element.get_attribute("alt")
-        if not team:
-            team = ""
-
-        # Get player position
-        player_info = player_header.locator(E.PLAYER_POS_INFO)
-        position = (
-            player_info.locator("li").nth(2).inner_text()
-            if player_info.count() > 0
-            else ""
-        )
-
-        # Parse eligible positions from the position string
-        eligible_positions = [pos.strip() for pos in position.split(",")]
-        primary_position = eligible_positions[0] if eligible_positions else ""
 
         # Extract bio data from the PlayerHeader__Bio section
         bio_data_raw = {}
@@ -275,12 +302,4 @@ class ESPNScraper:
                 # For any fields not in our mapping, use lowercase version of original key
                 bio_data[raw_key.lower()] = value
 
-        return Player(
-            id=player_id,
-            name=name,
-            team=team,
-            position=primary_position,
-            eligible_positions=eligible_positions,
-            image_url=image_url,
-            bio_data=bio_data,
-        )
+        return bio_data

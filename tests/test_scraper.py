@@ -1,3 +1,4 @@
+import os
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -85,184 +86,90 @@ def test_scraper_initialization(mock_sync_playwright, mock_playwright):
     mock_playwright.stop.assert_called_once()
 
 
-@patch("espn_player_getter.scraper.espn_scraper.ESPNScraper._scrape_player_data")
+@pytest.fixture
+def fixture_player_table_path():
+    """Get the path to the player table HTML fixture."""
+    return os.path.join(os.path.dirname(__file__), "fixtures", "player_table.html")
+
+
+@pytest.fixture
+def fixture_player_header_path():
+    """Get the path to the player header HTML fixture."""
+    return os.path.join(os.path.dirname(__file__), "fixtures", "player_header.html")
+
+
+def test_process_current_page(page, fixture_player_table_path):
+    """Test processing the current page of players using a real HTML fixture."""
+    # Load the fixture HTML into the page
+    page.goto(f"file://{fixture_player_table_path}")
+
+    # Create the scraper without starting a new Playwright instance
+    scraper = ESPNScraper(headless=True)
+
+    # Set the page directly
+    scraper.page = page
+    # Call the method
+    players = scraper._process_current_page()
+    # Verify results
+    assert len(players) == 50  # We should get players from the fixture
+    assert all(isinstance(player, Player) for player in players)
+
+    # Verify first player details (adjust these assertions based on your fixture content)
+    # These assertions are examples and should be replaced with real expected values
+    first_player = players[0]
+    assert first_player.name == "Shohei Ohtani"
+    assert first_player.team == "Los Angeles Dodgers"
+    assert first_player.eligible_positions == ["DH", "SP"]
+
+
+def test_scrape_player_bio(page, fixture_player_header_path):
+    """Test scraping player bio data from a player page."""
+    # Load the fixture HTML into the page
+    page.goto(f"file://{fixture_player_header_path}")
+
+    # Create the scraper without starting a new Playwright instance
+    scraper = ESPNScraper(headless=True)
+
+    # Set the page directly
+    scraper.page = page
+
+    # Call the method with the mock page
+    bio_data = scraper._scrape_player_bio(page)
+
+    # Verify bio data was correctly extracted
+    assert bio_data["height_weight"] == "6' 3\", 210 lbs"
+    assert bio_data["birthdate"] == "7/5/1994"  # Note: date is parsed to remove the age
+    assert bio_data["bat_throw"] == "Left/Right"
+    assert bio_data["birthplace"] == "Oshu, Japan"
+    assert bio_data["status"] == "Active"
+
+
 @patch("espn_player_getter.scraper.espn_scraper.sync_playwright")
-def test_process_current_page(
-    mock_sync_playwright, mock_scrape_player_data, mock_page, mock_playwright
+@patch("espn_player_getter.scraper.espn_scraper.ESPN_URL")
+def test_scrape_players(
+    mock_espn_url,
+    mock_sync_playwright,
+    page,
+    fixture_player_table_path,
+    fixture_player_header_path,
 ):
-    """Test processing the current page of players."""
-    # Setup mocks
-    mock_sync_playwright.return_value.start.return_value = mock_playwright
-    mock_browser = mock_playwright.chromium.launch.return_value
-    mock_browser.new_page.return_value = mock_page
-
-    # Setup mock for player rows
-    mock_table = MagicMock()
-    mock_rows = MagicMock()
-    mock_rows.count.return_value = 5
-    mock_table.locator.return_value = mock_rows
-    mock_page.locator.return_value = mock_table
-
-    # Setup mock for row elements
-    mock_row = MagicMock()
-    mock_name_element = MagicMock()
-    mock_name_element.inner_text.return_value = "Player Name"
-    mock_row.locator.return_value = mock_name_element
-    mock_rows.nth.return_value = mock_row
-
-    # Mock the new page for player stats
-    mock_new_page = MagicMock()
-    mock_context_manager = MagicMock()
-    mock_context_manager.__enter__ = MagicMock(return_value=mock_context_manager)
-    mock_context_manager.__exit__ = MagicMock(return_value=None)
-    mock_context_manager.value = mock_new_page
-    mock_page.context.expect_page.return_value = mock_context_manager
-
-    # Mock the player data result
-    mock_player = Player(
-        id="12345",
-        name="Player Name",
-        team="Team",
-        position="Position",
-        eligible_positions=["Position"],
-        image_url="https://example.com/image.png",
-        bio_data={"height_weight": "6' 3\", 210 lbs"},
-    )
-    mock_scrape_player_data.return_value = mock_player
-
-    with ESPNScraper(headless=True) as scraper:
-        # Override the page with our mock
-        scraper.page = mock_page
-
-        # Call the method
-        players = scraper._process_current_page()
-
-        # Verify results
-        assert len(players) == 5  # We should get 5 players
-        assert all(isinstance(player, Player) for player in players)
-        assert all(player.id == "12345" for player in players)
-        assert all(player.name == "Player Name" for player in players)
-
-
-@patch("espn_player_getter.scraper.espn_scraper.sync_playwright")
-def test_scrape_player_data(mock_sync_playwright, mock_page, mock_playwright):
-    """Test scraping player data from a player page."""
-    # Create a simplified mock of the behavior we need
-    # Instead of trying to mock all the internals, let's create a simplified test
-
-    # Create a test player with expected fields
-    expected_player = Player(
-        id="12345",
-        name="Player Name",
-        team="Team Name",
-        position="Position",
-        eligible_positions=["Position"],
-        image_url="https://example.com/player.png",
-        bio_data={
-            "height_weight": "6' 3\", 210 lbs",
-            "birthdate": "7/5/1994 (30)",
-            "bat_throw": "Left/Right",
-            "birthplace": "Oshu, Japan",
-            "status": "Active",
-        },
-    )
-
-    # Create a simplified version of the _scrape_player_data method for testing
-    def mock_scrape_player_data(self, page):
-        return expected_player
-
-    # Replace the actual method with our mocked version for the test
-    with patch.object(ESPNScraper, "_scrape_player_data", mock_scrape_player_data):
-        # Setup mocks
-        mock_sync_playwright.return_value.start.return_value = mock_playwright
-        mock_browser = mock_playwright.chromium.launch.return_value
-        mock_browser.new_page.return_value = mock_page
-
-        with ESPNScraper(headless=True) as scraper:
-            # Call the method with the mock player page
-            player = scraper._scrape_player_data(mock_page)
-
-            # Verify results
-            assert isinstance(player, Player)
-            assert player.id == "12345"
-            assert player.name == "Player Name"
-            assert player.team == "Team Name"
-            assert player.position == "Position"
-            assert player.eligible_positions == ["Position"]
-
-            # Test new bio fields
-            assert player.image_url == "https://example.com/player.png"
-            assert player.bio_data["height_weight"] == "6' 3\", 210 lbs"
-            assert player.bio_data["birthdate"] == "7/5/1994 (30)"
-            assert player.bio_data["bat_throw"] == "Left/Right"
-            assert player.bio_data["birthplace"] == "Oshu, Japan"
-            assert player.bio_data["status"] == "Active"
-
-
-@patch("espn_player_getter.scraper.espn_scraper.sync_playwright")
-def test_scrape_players(mock_sync_playwright, mock_page, mock_playwright):
     """Test scraping players from both batters and pitchers categories."""
-    # Setup mocks
-    mock_sync_playwright.return_value.start.return_value = mock_playwright
-    mock_browser = mock_playwright.chromium.launch.return_value
-    mock_browser.new_page.return_value = mock_page
+    # Load the fixture HTML into the page
+    mock_espn_url.__str__.return_value = f"file://{fixture_player_table_path}"
+    # Load the fixture HTML into the page
+    # page.goto(f"file://{fixture_player_table_path}")
 
-    # Setup mock for _scrape_player_data method
-    with patch.object(ESPNScraper, "_scrape_player_data") as mock_scrape_data:
-        # Create mock batters and pitchers
-        mock_batters = [
-            Player(
-                id="1",
-                name="Batter1",
-                team="Team1",
-                position="1B",
-                eligible_positions=["1B"],
-                image_url="https://example.com/batter1.png",
-                bio_data={"status": "Active"},
-            ),
-            Player(
-                id="2",
-                name="Batter2",
-                team="Team2",
-                position="OF",
-                eligible_positions=["OF"],
-                image_url="https://example.com/batter2.png",
-                bio_data={"status": "Active"},
-            ),
-        ]
-        mock_pitchers = [
-            Player(
-                id="3",
-                name="Pitcher1",
-                team="Team3",
-                position="SP",
-                eligible_positions=["SP"],
-                image_url="https://example.com/pitcher1.png",
-                bio_data={"status": "Active"},
-            ),
-            Player(
-                id="4",
-                name="Pitcher2",
-                team="Team4",
-                position="RP",
-                eligible_positions=["RP"],
-                image_url="https://example.com/pitcher2.png",
-                bio_data={"status": "Active"},
-            ),
-        ]
+    # Create the scraper without starting a new Playwright instance
+    scraper = ESPNScraper(headless=True)
 
-        # Configure mock to return different values on subsequent calls
-        mock_scrape_data.side_effect = [mock_batters, mock_pitchers]
+    # Set the page directly
+    # scraper.page = page
 
-        with ESPNScraper(headless=True) as scraper:
-            # Call the method
-            players = scraper.scrape_players(player_limit=10)
+    # Call the method
+    players = scraper.scrape_players(player_limit=10)
 
-            # Verify the method was called twice (once for batters, once for pitchers)
-            assert mock_scrape_data.call_count == 2
-
-            # Verify results
-            assert len(players) == 4  # 2 batters + 2 pitchers
+    # Verify results
+    assert len(players) == 4  # 2 batters + 2 pitchers
 
 
 @patch("espn_player_getter.scraper.espn_scraper.sync_playwright")
