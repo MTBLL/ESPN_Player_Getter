@@ -1,5 +1,3 @@
-import pytest
-
 from espn_player_getter.models.player import Player
 
 
@@ -18,12 +16,12 @@ def test_player_to_dict():
             "birthdate": "8/7/1991 (32)",
             "bat_throw": "Right/Right",
             "birthplace": "Vineland, NJ",
-            "status": "Active"
-        }
+            "status": "Active",
+        },
     )
-    
+
     player_dict = player.to_dict()
-    
+
     assert player_dict["id"] == "12345"
     assert player_dict["name"] == "Mike Trout"
     assert player_dict["team"] == "LAA"
@@ -53,12 +51,12 @@ def test_player_from_dict():
             "birthdate": "8/7/1991 (32)",
             "bat_throw": "Right/Right",
             "birthplace": "Vineland, NJ",
-            "status": "Active"
-        }
+            "status": "Active",
+        },
     }
-    
+
     player = Player.from_dict(player_dict)
-    
+
     assert player.id == "12345"
     assert player.name == "Mike Trout"
     assert player.team == "LAA"
@@ -80,11 +78,11 @@ def test_player_from_dict_minimal():
         "name": "Aaron Judge",
         "team": "NYY",
         "position": "RF",
-        "eligible_positions": ["RF", "OF"]
+        "eligible_positions": ["RF", "OF"],
     }
-    
+
     player = Player.from_dict(player_dict)
-    
+
     assert player.id == "67890"
     assert player.name == "Aaron Judge"
     assert player.team == "NYY"

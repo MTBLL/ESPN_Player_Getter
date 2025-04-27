@@ -16,7 +16,7 @@ DOM_LOADED = "domcontentloaded"
 class ESPNScraper:
     """Scraper for ESPN Fantasy Baseball player data."""
 
-    def __init__(self, headless: bool = True):
+    def __init__(self, headless: bool = True, base_url: str = ESPN_URL):
         """Initialize the scraper.
 
         Args:
@@ -25,13 +25,16 @@ class ESPNScraper:
         self.headless = headless
         self.playwright = None
         self.browser = None
+        self.context = None
         self.page = None
+        self.base_url = base_url
 
     def __enter__(self):
         """Start Playwright session when entering context."""
         self.playwright = sync_playwright().start()
         self.browser = self.playwright.chromium.launch(headless=self.headless)
-        self.page = self.browser.new_page()
+        self.context = self.browser.new_context()
+        self.page = self.context.new_page()
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -51,10 +54,8 @@ class ESPNScraper:
             List of Player objects
         """
         print("Navigating to ESPN Fantasy Baseball players page...")
-        self.__enter__()
         assert self.page, "Page object is not initialized"
-        breakpoint()
-        self.page.goto(ESPN_URL)
+        self.page.goto(self.base_url)
         self.page.wait_for_load_state(DOM_LOADED)
 
         print("Scraping player data...")
@@ -231,13 +232,13 @@ class ESPNScraper:
                 player_url = ESPN_PLAYER_URL.format(player_id=player.id)
 
                 # Open player page in a new page
+                assert self.browser, "Browser is not set"
                 player_page = self.browser.new_page()
                 player_page.goto(player_url)
                 player_page.wait_for_load_state(DOM_LOADED)
 
                 # Get bio data for the player
-                bio_data = self._scrape_player_bio(player_page)
-                player.bio_data = bio_data
+                player.bio_data = self._scrape_player_bio(player_page)
 
                 # Close the player page
                 player_page.close()
