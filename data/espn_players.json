@@ -3,12 +3,13 @@
     "id": "39832",
     "name": "Shohei Ohtani",
     "team": "Los Angeles Dodgers",
-    "position": "Designated Hitter",
+    "position": "DH",
     "eligible_positions": [
-      "Designated Hitter"
+      "DH",
+      "SP"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png&h=120&w=120&scale=crop",
     "bio_data": {
       "height_weight": "6' 3\", 210 lbs",
       "birthdate": "7/5/1994",
@@ -18,344 +19,165 @@
     }
   },
   {
-    "id": "39832",
-    "name": "Shohei Ohtani",
-    "team": "Los Angeles Dodgers",
-    "position": "Designated Hitter",
+    "id": "42403",
+    "name": "Bobby Witt Jr.",
+    "team": "Kansas City Royals",
+    "position": "SS",
     "eligible_positions": [
-      "Designated Hitter"
+      "SS"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42403.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/5/1994",
+      "height_weight": "6' 1\", 200 lbs",
+      "birthdate": "6/14/2000",
+      "bat_throw": "Right/Right",
+      "birthplace": "Colleyville, TX",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "35983",
+    "name": "Fernando Tatis Jr.",
+    "team": "San Diego Padres",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35983.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 217 lbs",
+      "birthdate": "1/2/1999",
+      "bat_throw": "Right/Right",
+      "birthplace": "San Pedro de Macoris, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42404",
+    "name": "Corbin Carroll",
+    "team": "Arizona Diamondbacks",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42404.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 165 lbs",
+      "birthdate": "8/21/2000",
+      "bat_throw": "Left/Left",
+      "birthplace": "Seattle, WA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4917694",
+    "name": "Elly De La Cruz",
+    "team": "Cincinnati Reds",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917694.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 5\", 200 lbs",
+      "birthdate": "1/11/2002",
+      "bat_throw": "Both/Right",
+      "birthplace": "Sabana Grande de Boya, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41044",
+    "name": "Julio Rodriguez",
+    "team": "Seattle Mariners",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41044.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 228 lbs",
+      "birthdate": "12/29/2000",
+      "bat_throw": "Right/Right",
+      "birthplace": "Loma de Cabrera, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4917869",
+    "name": "Jackson Chourio",
+    "team": "Milwaukee Brewers",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917869.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 204 lbs",
+      "birthdate": "3/11/2004",
+      "bat_throw": "Right/Right",
+      "birthplace": "Maracaibo, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "36969",
+    "name": "Juan Soto",
+    "team": "New York Mets",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36969.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 224 lbs",
+      "birthdate": "10/25/1998",
+      "bat_throw": "Left/Left",
+      "birthplace": "Santo Domingo, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "35002",
+    "name": "Vladimir Guerrero Jr.",
+    "team": "Toronto Blue Jays",
+    "position": "1B",
+    "eligible_positions": [
+      "1B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35002.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 245 lbs",
+      "birthdate": "3/16/1999",
+      "bat_throw": "Right/Right",
+      "birthplace": "Montreal, PQ",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "30951",
+    "name": "Bryce Harper",
+    "team": "Philadelphia Phillies",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30951.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 210 lbs",
+      "birthdate": "10/16/1992",
       "bat_throw": "Left/Right",
-      "birthplace": "Oshu, Japan",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39832",
-    "name": "Shohei Ohtani",
-    "team": "Los Angeles Dodgers",
-    "position": "Designated Hitter",
-    "eligible_positions": [
-      "Designated Hitter"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/5/1994",
-      "bat_throw": "Left/Right",
-      "birthplace": "Oshu, Japan",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39832",
-    "name": "Shohei Ohtani",
-    "team": "Los Angeles Dodgers",
-    "position": "Designated Hitter",
-    "eligible_positions": [
-      "Designated Hitter"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/5/1994",
-      "bat_throw": "Left/Right",
-      "birthplace": "Oshu, Japan",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39832",
-    "name": "Shohei Ohtani",
-    "team": "Los Angeles Dodgers",
-    "position": "Designated Hitter",
-    "eligible_positions": [
-      "Designated Hitter"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/5/1994",
-      "bat_throw": "Left/Right",
-      "birthplace": "Oshu, Japan",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32801",
-    "name": "Jose Ramirez",
-    "team": "Cleveland Guardians",
-    "position": "Third Baseman",
-    "eligible_positions": [
-      "Third Baseman"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32801.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "5' 8\", 190 lbs",
-      "birthdate": "9/17/1992",
-      "bat_throw": "Both/Right",
-      "birthplace": "Bani, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32801",
-    "name": "Jose Ramirez",
-    "team": "Cleveland Guardians",
-    "position": "Third Baseman",
-    "eligible_positions": [
-      "Third Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 8\", 190 lbs",
-      "birthdate": "9/17/1992",
-      "bat_throw": "Both/Right",
-      "birthplace": "Bani, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32801",
-    "name": "Jose Ramirez",
-    "team": "Cleveland Guardians",
-    "position": "Third Baseman",
-    "eligible_positions": [
-      "Third Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 8\", 190 lbs",
-      "birthdate": "9/17/1992",
-      "bat_throw": "Both/Right",
-      "birthplace": "Bani, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32801",
-    "name": "Jose Ramirez",
-    "team": "Cleveland Guardians",
-    "position": "Third Baseman",
-    "eligible_positions": [
-      "Third Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 8\", 190 lbs",
-      "birthdate": "9/17/1992",
-      "bat_throw": "Both/Right",
-      "birthplace": "Bani, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32801",
-    "name": "Jose Ramirez",
-    "team": "Cleveland Guardians",
-    "position": "Third Baseman",
-    "eligible_positions": [
-      "Third Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 8\", 190 lbs",
-      "birthdate": "9/17/1992",
-      "bat_throw": "Both/Right",
-      "birthplace": "Bani, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41044",
-    "name": "Julio Rodriguez",
-    "team": "Seattle Mariners",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41044.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 228 lbs",
-      "birthdate": "12/29/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Loma de Cabrera, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41044",
-    "name": "Julio Rodriguez",
-    "team": "Seattle Mariners",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 228 lbs",
-      "birthdate": "12/29/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Loma de Cabrera, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41044",
-    "name": "Julio Rodriguez",
-    "team": "Seattle Mariners",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 228 lbs",
-      "birthdate": "12/29/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Loma de Cabrera, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41044",
-    "name": "Julio Rodriguez",
-    "team": "Seattle Mariners",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 228 lbs",
-      "birthdate": "12/29/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Loma de Cabrera, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41044",
-    "name": "Julio Rodriguez",
-    "team": "Seattle Mariners",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 228 lbs",
-      "birthdate": "12/29/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Loma de Cabrera, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32129",
-    "name": "Francisco Lindor",
-    "team": "New York Mets",
-    "position": "Shortstop",
-    "eligible_positions": [
-      "Shortstop"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 10\", 190 lbs",
-      "birthdate": "11/14/1993",
-      "bat_throw": "Both/Right",
-      "birthplace": "Caguas, Puerto Rico",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32129",
-    "name": "Francisco Lindor",
-    "team": "New York Mets",
-    "position": "Shortstop",
-    "eligible_positions": [
-      "Shortstop"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 10\", 190 lbs",
-      "birthdate": "11/14/1993",
-      "bat_throw": "Both/Right",
-      "birthplace": "Caguas, Puerto Rico",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32129",
-    "name": "Francisco Lindor",
-    "team": "New York Mets",
-    "position": "Shortstop",
-    "eligible_positions": [
-      "Shortstop"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 10\", 190 lbs",
-      "birthdate": "11/14/1993",
-      "bat_throw": "Both/Right",
-      "birthplace": "Caguas, Puerto Rico",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32129",
-    "name": "Francisco Lindor",
-    "team": "New York Mets",
-    "position": "Shortstop",
-    "eligible_positions": [
-      "Shortstop"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 10\", 190 lbs",
-      "birthdate": "11/14/1993",
-      "bat_throw": "Both/Right",
-      "birthplace": "Caguas, Puerto Rico",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32129",
-    "name": "Francisco Lindor",
-    "team": "New York Mets",
-    "position": "Shortstop",
-    "eligible_positions": [
-      "Shortstop"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32129.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "5' 10\", 190 lbs",
-      "birthdate": "11/14/1993",
-      "bat_throw": "Both/Right",
-      "birthplace": "Caguas, Puerto Rico",
+      "birthplace": "Las Vegas, NV",
       "status": "Active"
     }
   },
@@ -363,12 +185,12 @@
     "id": "30193",
     "name": "Freddie Freeman",
     "team": "Los Angeles Dodgers",
-    "position": "First Baseman",
+    "position": "1B",
     "eligible_positions": [
-      "First Baseman"
+      "1B"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30193.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30193.png&h=120&w=120&scale=crop",
     "bio_data": {
       "height_weight": "6' 4\", 220 lbs",
       "birthdate": "9/12/1989",
@@ -378,308 +200,147 @@
     }
   },
   {
-    "id": "30193",
-    "name": "Freddie Freeman",
-    "team": "Los Angeles Dodgers",
-    "position": "First Baseman",
+    "id": "33710",
+    "name": "Trea Turner",
+    "team": "Philadelphia Phillies",
+    "position": "SS",
     "eligible_positions": [
-      "First Baseman"
+      "SS"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30193.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33710.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 4\", 220 lbs",
-      "birthdate": "9/12/1989",
-      "bat_throw": "Left/Right",
-      "birthplace": "Villa Park, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "30193",
-    "name": "Freddie Freeman",
-    "team": "Los Angeles Dodgers",
-    "position": "First Baseman",
-    "eligible_positions": [
-      "First Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 4\", 220 lbs",
-      "birthdate": "9/12/1989",
-      "bat_throw": "Left/Right",
-      "birthplace": "Villa Park, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "30193",
-    "name": "Freddie Freeman",
-    "team": "Los Angeles Dodgers",
-    "position": "First Baseman",
-    "eligible_positions": [
-      "First Baseman"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 4\", 220 lbs",
-      "birthdate": "9/12/1989",
-      "bat_throw": "Left/Right",
-      "birthplace": "Villa Park, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4872691",
-    "name": "Jackson Merrill",
-    "team": "San Diego Padres",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 195 lbs",
-      "birthdate": "4/19/2003",
-      "bat_throw": "Left/Right",
-      "birthplace": "Baltimore, MD",
-      "status": "10-Day IL"
-    }
-  },
-  {
-    "id": "4872691",
-    "name": "Jackson Merrill",
-    "team": "San Diego Padres",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4872691.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 195 lbs",
-      "birthdate": "4/19/2003",
-      "bat_throw": "Left/Right",
-      "birthplace": "Baltimore, MD",
-      "status": "10-Day IL"
-    }
-  },
-  {
-    "id": "4872691",
-    "name": "Jackson Merrill",
-    "team": "San Diego Padres",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4872691.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 195 lbs",
-      "birthdate": "4/19/2003",
-      "bat_throw": "Left/Right",
-      "birthplace": "Baltimore, MD",
-      "status": "10-Day IL"
-    }
-  },
-  {
-    "id": "4872691",
-    "name": "Jackson Merrill",
-    "team": "San Diego Padres",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 195 lbs",
-      "birthdate": "4/19/2003",
-      "bat_throw": "Left/Right",
-      "birthplace": "Baltimore, MD",
-      "status": "10-Day IL"
-    }
-  },
-  {
-    "id": "4872691",
-    "name": "Jackson Merrill",
-    "team": "San Diego Padres",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 195 lbs",
-      "birthdate": "4/19/2003",
-      "bat_throw": "Left/Right",
-      "birthplace": "Baltimore, MD",
-      "status": "10-Day IL"
-    }
-  },
-  {
-    "id": "31662",
-    "name": "Jose Altuve",
-    "team": "Houston Astros",
-    "position": "Left Fielder",
-    "eligible_positions": [
-      "Left Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 6\", 167 lbs",
-      "birthdate": "5/6/1990",
+      "height_weight": "6' 1\", 185 lbs",
+      "birthdate": "6/30/1993",
       "bat_throw": "Right/Right",
-      "birthplace": "Maracay, Venezuela",
+      "birthplace": "Boynton Beach, FL",
       "status": "Active"
     }
   },
   {
-    "id": "31662",
-    "name": "Jose Altuve",
-    "team": "Houston Astros",
-    "position": "Left Fielder",
+    "id": "4872691",
+    "name": "Jackson Merrill",
+    "team": "San Diego Padres",
+    "position": "OF",
     "eligible_positions": [
-      "Left Fielder"
+      "OF"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31662.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4872691.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "5' 6\", 167 lbs",
-      "birthdate": "5/6/1990",
+      "height_weight": "6' 3\", 195 lbs",
+      "birthdate": "4/19/2003",
+      "bat_throw": "Left/Right",
+      "birthplace": "Baltimore, MD",
+      "status": "10-Day IL"
+    }
+  },
+  {
+    "id": "32767",
+    "name": "Matt Olson",
+    "team": "Atlanta Braves",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32767.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 4\", 225 lbs",
+      "birthdate": "3/29/1994",
+      "bat_throw": "Left/Right",
+      "birthplace": "Atlanta, GA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "34886",
+    "name": "Alex Bregman",
+    "team": "Boston Red Sox",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34886.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 190 lbs",
+      "birthdate": "3/30/1994",
       "bat_throw": "Right/Right",
-      "birthplace": "Maracay, Venezuela",
+      "birthplace": "Albuquerque, NM",
       "status": "Active"
     }
   },
   {
-    "id": "31662",
-    "name": "Jose Altuve",
-    "team": "Houston Astros",
-    "position": "Left Fielder",
+    "id": "31668",
+    "name": "Marcell Ozuna",
+    "team": "Atlanta Braves",
+    "position": "DH",
     "eligible_positions": [
-      "Left Fielder"
+      "DH"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31668.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "5' 6\", 167 lbs",
-      "birthdate": "5/6/1990",
+      "height_weight": "6' 1\", 225 lbs",
+      "birthdate": "11/12/1990",
       "bat_throw": "Right/Right",
-      "birthplace": "Maracay, Venezuela",
+      "birthplace": "Santo Domingo, Dominican Republic",
       "status": "Active"
     }
   },
   {
-    "id": "31662",
-    "name": "Jose Altuve",
-    "team": "Houston Astros",
-    "position": "Left Fielder",
+    "id": "36185",
+    "name": "Ronald Acuna Jr.",
+    "team": "Atlanta Braves",
+    "position": "OF",
     "eligible_positions": [
-      "Left Fielder"
+      "OF"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36185.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "5' 6\", 167 lbs",
-      "birthdate": "5/6/1990",
+      "height_weight": "6' 0\", 205 lbs",
+      "birthdate": "12/18/1997",
       "bat_throw": "Right/Right",
-      "birthplace": "Maracay, Venezuela",
+      "birthplace": "La Guaira, Venezuela",
+      "experience": "7th Season"
+    }
+  },
+  {
+    "id": "40926",
+    "name": "Brent Rooker",
+    "team": "Athletics",
+    "position": "DH",
+    "eligible_positions": [
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/40926.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 225 lbs",
+      "birthdate": "11/1/1994",
+      "bat_throw": "Right/Right",
+      "birthplace": "Germantown, TN",
       "status": "Active"
     }
   },
   {
-    "id": "33712",
-    "name": "Kyle Schwarber",
-    "team": "Philadelphia Phillies",
-    "position": "Left Fielder",
+    "id": "33859",
+    "name": "Rafael Devers",
+    "team": "Boston Red Sox",
+    "position": "3B",
     "eligible_positions": [
-      "Left Fielder"
+      "3B",
+      "DH"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33859.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "5' 11\", 229 lbs",
-      "birthdate": "3/5/1993",
+      "height_weight": "6' 0\", 235 lbs",
+      "birthdate": "10/24/1996",
       "bat_throw": "Left/Right",
-      "birthplace": "Middletown, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "33712",
-    "name": "Kyle Schwarber",
-    "team": "Philadelphia Phillies",
-    "position": "Left Fielder",
-    "eligible_positions": [
-      "Left Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 11\", 229 lbs",
-      "birthdate": "3/5/1993",
-      "bat_throw": "Left/Right",
-      "birthplace": "Middletown, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "33712",
-    "name": "Kyle Schwarber",
-    "team": "Philadelphia Phillies",
-    "position": "Left Fielder",
-    "eligible_positions": [
-      "Left Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33712.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "5' 11\", 229 lbs",
-      "birthdate": "3/5/1993",
-      "bat_throw": "Left/Right",
-      "birthplace": "Middletown, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "33712",
-    "name": "Kyle Schwarber",
-    "team": "Philadelphia Phillies",
-    "position": "Left Fielder",
-    "eligible_positions": [
-      "Left Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33712.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "5' 11\", 229 lbs",
-      "birthdate": "3/5/1993",
-      "bat_throw": "Left/Right",
-      "birthplace": "Middletown, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "33712",
-    "name": "Kyle Schwarber",
-    "team": "Philadelphia Phillies",
-    "position": "Left Fielder",
-    "eligible_positions": [
-      "Left Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "5' 11\", 229 lbs",
-      "birthdate": "3/5/1993",
-      "bat_throw": "Left/Right",
-      "birthplace": "Middletown, OH",
+      "birthplace": "Sanchez, Dominican Republic",
       "status": "Active"
     }
   },
@@ -687,12 +348,12 @@
     "id": "42402",
     "name": "CJ Abrams",
     "team": "Washington Nationals",
-    "position": "Shortstop",
+    "position": "SS",
     "eligible_positions": [
-      "Shortstop"
+      "SS"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42402.png&h=120&w=120&scale=crop",
     "bio_data": {
       "height_weight": "6' 0\", 191 lbs",
       "birthdate": "10/3/2000",
@@ -702,1100 +363,1492 @@
     }
   },
   {
-    "id": "42402",
-    "name": "CJ Abrams",
+    "id": "41292",
+    "name": "Cal Raleigh",
+    "team": "Seattle Mariners",
+    "position": "C",
+    "eligible_positions": [
+      "C"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41292.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 235 lbs",
+      "birthdate": "11/26/1996",
+      "bat_throw": "Both/Right",
+      "birthplace": "Cullowhee, NC",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4917919",
+    "name": "Lawrence Butler",
+    "team": "Athletics",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917919.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 210 lbs",
+      "birthdate": "7/10/2000",
+      "bat_throw": "Left/Right",
+      "birthplace": "Burlington, NJ",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "5134621",
+    "name": "Jung Hoo Lee",
+    "team": "San Francisco Giants",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/5134621.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 197 lbs",
+      "birthdate": "8/20/1998",
+      "bat_throw": "Left/Right",
+      "birthplace": "Nagoya, Japan",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42470",
+    "name": "Michael Harris II",
+    "team": "Atlanta Braves",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42470.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 195 lbs",
+      "birthdate": "3/7/2001",
+      "bat_throw": "Left/Left",
+      "birthplace": "DeKalb, GA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "31283",
+    "name": "Christian Yelich",
+    "team": "Milwaukee Brewers",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31283.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 203 lbs",
+      "birthdate": "12/5/1991",
+      "bat_throw": "Left/Right",
+      "birthplace": "Thousand Oaks, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33192",
+    "name": "Aaron Judge",
+    "team": "New York Yankees",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33192.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 7\", 282 lbs",
+      "birthdate": "4/26/1992",
+      "bat_throw": "Right/Right",
+      "birthplace": "Linden, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32801",
+    "name": "Jose Ramirez",
+    "team": "Cleveland Guardians",
+    "position": "3B",
+    "eligible_positions": [
+      "3B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32801.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 8\", 190 lbs",
+      "birthdate": "9/17/1992",
+      "bat_throw": "Both/Right",
+      "birthplace": "Bani, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33039",
+    "name": "Mookie Betts",
+    "team": "Los Angeles Dodgers",
+    "position": "SS",
+    "eligible_positions": [
+      "SS",
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33039.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 180 lbs",
+      "birthdate": "10/7/1992",
+      "bat_throw": "Right/Right",
+      "birthplace": "Nashville, TN",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "31097",
+    "name": "Manny Machado",
+    "team": "San Diego Padres",
+    "position": "3B",
+    "eligible_positions": [
+      "3B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31097.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 218 lbs",
+      "birthdate": "7/6/1992",
+      "bat_throw": "Right/Right",
+      "birthplace": "Miami, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "39712",
+    "name": "Oneil Cruz",
+    "team": "Pittsburgh Pirates",
+    "position": "SS",
+    "eligible_positions": [
+      "SS",
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39712.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 7\", 240 lbs",
+      "birthdate": "10/4/1998",
+      "bat_throw": "Left/Right",
+      "birthplace": "Nizao, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "34982",
+    "name": "Austin Riley",
+    "team": "Atlanta Braves",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34982.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 225 lbs",
+      "birthdate": "4/2/1997",
+      "bat_throw": "Right/Right",
+      "birthplace": "Memphis, TN",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4918256",
+    "name": "James Wood",
     "team": "Washington Nationals",
-    "position": "Shortstop",
+    "position": "OF",
     "eligible_positions": [
-      "Shortstop"
+      "OF"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4918256.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 0\", 191 lbs",
-      "birthdate": "10/3/2000",
+      "height_weight": "6' 7\", 234 lbs",
+      "birthdate": "9/17/2002",
       "bat_throw": "Left/Right",
-      "birthplace": "Alpharetta, GA",
+      "birthplace": "Rockville, MD",
       "status": "Active"
     }
   },
   {
-    "id": "42402",
-    "name": "CJ Abrams",
+    "id": "31662",
+    "name": "Jose Altuve",
+    "team": "Houston Astros",
+    "position": "2B",
+    "eligible_positions": [
+      "2B",
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31662.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 6\", 167 lbs",
+      "birthdate": "5/6/1990",
+      "bat_throw": "Right/Right",
+      "birthplace": "Maracay, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33712",
+    "name": "Kyle Schwarber",
+    "team": "Philadelphia Phillies",
+    "position": "DH",
+    "eligible_positions": [
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33712.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 229 lbs",
+      "birthdate": "3/5/1993",
+      "bat_throw": "Left/Right",
+      "birthplace": "Middletown, OH",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "39895",
+    "name": "William Contreras",
+    "team": "Milwaukee Brewers",
+    "position": "C",
+    "eligible_positions": [
+      "C",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39895.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 218 lbs",
+      "birthdate": "12/24/1997",
+      "bat_throw": "Right/Right",
+      "birthplace": "Puerto Cabello, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42178",
+    "name": "Adley Rutschman",
+    "team": "Baltimore Orioles",
+    "position": "C",
+    "eligible_positions": [
+      "C",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42178.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 230 lbs",
+      "birthdate": "2/6/1998",
+      "bat_throw": "Both/Right",
+      "birthplace": "Portland, OR",
+      "status": "Day-To-Day"
+    }
+  },
+  {
+    "id": "33783",
+    "name": "Ozzie Albies",
+    "team": "Atlanta Braves",
+    "position": "2B",
+    "eligible_positions": [
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33783.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 7\", 165 lbs",
+      "birthdate": "1/7/1997",
+      "bat_throw": "Both/Right",
+      "birthplace": "Willemstad, Curacao",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "38309",
+    "name": "Will Smith",
+    "team": "Los Angeles Dodgers",
+    "position": "C",
+    "eligible_positions": [
+      "C"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/38309.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 195 lbs",
+      "birthdate": "3/28/1995",
+      "bat_throw": "Right/Right",
+      "birthplace": "Louisville, KY",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "34967",
+    "name": "Kyle Tucker",
+    "team": "Chicago Cubs",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34967.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 4\", 212 lbs",
+      "birthdate": "1/17/1997",
+      "bat_throw": "Left/Right",
+      "birthplace": "Tampa, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "36018",
+    "name": "Yordan Alvarez",
+    "team": "Houston Astros",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36018.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 4\", 237 lbs",
+      "birthdate": "6/27/1997",
+      "bat_throw": "Left/Right",
+      "birthplace": "Las Tunas, Cuba",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41610",
+    "name": "Jarren Duran",
+    "team": "Boston Red Sox",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41610.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 205 lbs",
+      "birthdate": "9/5/1996",
+      "bat_throw": "Left/Right",
+      "birthplace": "Corona, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32691",
+    "name": "Corey Seager",
+    "team": "Texas Rangers",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32691.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 215 lbs",
+      "birthdate": "4/27/1994",
+      "bat_throw": "Left/Right",
+      "birthplace": "Charlotte, NC",
+      "status": "10-Day IL"
+    }
+  },
+  {
+    "id": "32512",
+    "name": "Ketel Marte",
+    "team": "Arizona Diamondbacks",
+    "position": "2B",
+    "eligible_positions": [
+      "2B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32512.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 210 lbs",
+      "birthdate": "10/12/1993",
+      "bat_throw": "Both/Right",
+      "birthplace": "Nizao, Dominican Republic",
+      "status": "10-Day IL"
+    }
+  },
+  {
+    "id": "4905921",
+    "name": "Junior Caminero",
+    "team": "Tampa Bay Rays",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4905921.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 220 lbs",
+      "birthdate": "7/5/2003",
+      "bat_throw": "Right/Right",
+      "birthplace": "Santo Domingo, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42507",
+    "name": "Gunnar Henderson",
+    "team": "Baltimore Orioles",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42507.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 220 lbs",
+      "birthdate": "6/29/2001",
+      "bat_throw": "Left/Right",
+      "birthplace": "Montgomery, AL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "37498",
+    "name": "Pete Alonso",
+    "team": "New York Mets",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/37498.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 245 lbs",
+      "birthdate": "12/7/1994",
+      "bat_throw": "Right/Right",
+      "birthplace": "Tampa, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41433",
+    "name": "Jazz Chisholm Jr.",
+    "team": "New York Yankees",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "2B",
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41433.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 184 lbs",
+      "birthdate": "2/1/1998",
+      "bat_throw": "Left/Right",
+      "birthplace": "Nassau, Bahamas",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32129",
+    "name": "Francisco Lindor",
+    "team": "New York Mets",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32129.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 190 lbs",
+      "birthdate": "11/14/1993",
+      "bat_throw": "Both/Right",
+      "birthplace": "Caguas, Puerto Rico",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42462",
+    "name": "Brenton Doyle",
+    "team": "Colorado Rockies",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42462.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 220 lbs",
+      "birthdate": "5/14/1998",
+      "bat_throw": "Right/Right",
+      "birthplace": "Warrenton, VA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33377",
+    "name": "Teoscar Hernandez",
+    "team": "Los Angeles Dodgers",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33377.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 215 lbs",
+      "birthdate": "10/15/1992",
+      "bat_throw": "Right/Right",
+      "birthplace": "Cotui, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4719324",
+    "name": "Wyatt Langford",
+    "team": "Texas Rangers",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4719324.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 225 lbs",
+      "birthdate": "11/15/2001",
+      "bat_throw": "Right/Right",
+      "birthplace": "Trenton, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4905919",
+    "name": "Ezequiel Tovar",
+    "team": "Colorado Rockies",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4905919.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 162 lbs",
+      "birthdate": "8/1/2001",
+      "bat_throw": "Right/Right",
+      "birthplace": "Maracay, Venezuela",
+      "status": "10-Day IL"
+    }
+  },
+  {
+    "id": "33675",
+    "name": "Willy Adames",
+    "team": "San Francisco Giants",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33675.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 215 lbs",
+      "birthdate": "9/2/1995",
+      "bat_throw": "Right/Right",
+      "birthplace": "Santiago, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "35066",
+    "name": "Josh Naylor",
+    "team": "Arizona Diamondbacks",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35066.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 235 lbs",
+      "birthdate": "6/22/1997",
+      "bat_throw": "Left/Left",
+      "birthplace": "Mississauga, ON",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4298641",
+    "name": "Jordan Westburg",
+    "team": "Baltimore Orioles",
+    "position": "3B",
+    "eligible_positions": [
+      "3B",
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4298641.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 210 lbs",
+      "birthdate": "2/18/1999",
+      "bat_throw": "Right/Right",
+      "birthplace": "New Braunfels, TX",
+      "status": "Day-To-Day"
+    }
+  },
+  {
+    "id": "30836",
+    "name": "Mike Trout",
+    "team": "Los Angeles Angels",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30836.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 235 lbs",
+      "birthdate": "8/7/1991",
+      "bat_throw": "Right/Right",
+      "birthplace": "Vineland, NJ",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4142424",
+    "name": "Seiya Suzuki",
+    "team": "Chicago Cubs",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4142424.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 182 lbs",
+      "birthdate": "8/18/1994",
+      "bat_throw": "Right/Right",
+      "birthplace": "Tokyo, Japan",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33912",
+    "name": "Cody Bellinger",
+    "team": "New York Yankees",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "1B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33912.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 203 lbs",
+      "birthdate": "7/13/1995",
+      "bat_throw": "Left/Left",
+      "birthplace": "Scottsdale, AZ",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4781491",
+    "name": "Yainer Diaz",
+    "team": "Houston Astros",
+    "position": "C",
+    "eligible_positions": [
+      "C",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4781491.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 195 lbs",
+      "birthdate": "9/21/1998",
+      "bat_throw": "Right/Right",
+      "birthplace": "Azua Province, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32532",
+    "name": "Willson Contreras",
+    "team": "St. Louis Cardinals",
+    "position": "C",
+    "eligible_positions": [
+      "C",
+      "1B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32532.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 240 lbs",
+      "birthdate": "5/13/1992",
+      "bat_throw": "Right/Right",
+      "birthplace": "Puerto Cabello, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "38904",
+    "name": "Bo Bichette",
+    "team": "Toronto Blue Jays",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/38904.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 190 lbs",
+      "birthdate": "3/5/1998",
+      "bat_throw": "Right/Right",
+      "birthplace": "Orlando, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "34945",
+    "name": "Ian Happ",
+    "team": "Chicago Cubs",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34945.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 205 lbs",
+      "birthdate": "8/12/1994",
+      "bat_throw": "Both/Right",
+      "birthplace": "Pittsburgh, PA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "39631",
+    "name": "Luis Robert Jr.",
+    "team": "Chicago White Sox",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39631.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 225 lbs",
+      "birthdate": "8/3/1997",
+      "bat_throw": "Right/Right",
+      "birthplace": "Ciego de Avila, Cuba",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "31027",
+    "name": "Paul Goldschmidt",
+    "team": "New York Yankees",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31027.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 225 lbs",
+      "birthdate": "9/10/1987",
+      "bat_throw": "Right/Right",
+      "birthplace": "Wilmington, DE",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "36488",
+    "name": "Randy Arozarena",
+    "team": "Seattle Mariners",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36488.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 185 lbs",
+      "birthdate": "2/28/1995",
+      "bat_throw": "Right/Right",
+      "birthplace": "Havana, Cuba",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "40459",
+    "name": "Luis Garcia Jr.",
     "team": "Washington Nationals",
-    "position": "Shortstop",
+    "position": "2B",
     "eligible_positions": [
-      "Shortstop"
+      "2B"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/40459.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 0\", 191 lbs",
-      "birthdate": "10/3/2000",
+      "height_weight": "6' 1\", 216 lbs",
+      "birthdate": "5/16/2000",
       "bat_throw": "Left/Right",
-      "birthplace": "Alpharetta, GA",
+      "birthplace": "New York, NY",
       "status": "Active"
     }
   },
   {
-    "id": "42402",
-    "name": "CJ Abrams",
+    "id": "42547",
+    "name": "Anthony Volpe",
+    "team": "New York Yankees",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42547.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 10\", 180 lbs",
+      "birthdate": "4/28/2001",
+      "bat_throw": "Right/Right",
+      "birthplace": "New York, NY",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42598",
+    "name": "Shea Langeliers",
+    "team": "Athletics",
+    "position": "C",
+    "eligible_positions": [
+      "C"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42598.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 205 lbs",
+      "birthdate": "11/18/1997",
+      "bat_throw": "Right/Right",
+      "birthplace": "Portland, OR",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41355",
+    "name": "Geraldo Perdomo",
+    "team": "Arizona Diamondbacks",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41355.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 203 lbs",
+      "birthdate": "10/22/1999",
+      "bat_throw": "Both/Right",
+      "birthplace": "Santo Domingo, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4424286",
+    "name": "Spencer Torkelson",
+    "team": "Detroit Tigers",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4424286.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 220 lbs",
+      "birthdate": "8/26/1999",
+      "bat_throw": "Right/Right",
+      "birthplace": "Petaluma, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "38827",
+    "name": "Keibert Ruiz",
     "team": "Washington Nationals",
-    "position": "Shortstop",
+    "position": "C",
     "eligible_positions": [
-      "Shortstop"
+      "C"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/38827.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 0\", 191 lbs",
-      "birthdate": "10/3/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Alpharetta, GA",
+      "height_weight": "6' 0\", 238 lbs",
+      "birthdate": "7/20/1998",
+      "bat_throw": "Both/Right",
+      "birthplace": "Valencia, Venezuela",
       "status": "Active"
     }
   },
   {
-    "id": "4917919",
-    "name": "Lawrence Butler",
-    "team": "Athletics",
-    "position": "Right Fielder",
+    "id": "4987382",
+    "name": "Ceddanne Rafaela",
+    "team": "Boston Red Sox",
+    "position": "OF",
     "eligible_positions": [
-      "Right Fielder"
+      "OF",
+      "SS"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4987382.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/10/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Burlington, NJ",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4917919",
-    "name": "Lawrence Butler",
-    "team": "Athletics",
-    "position": "Right Fielder",
-    "eligible_positions": [
-      "Right Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/10/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Burlington, NJ",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4917919",
-    "name": "Lawrence Butler",
-    "team": "Athletics",
-    "position": "Right Fielder",
-    "eligible_positions": [
-      "Right Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917919.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/10/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Burlington, NJ",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4917919",
-    "name": "Lawrence Butler",
-    "team": "Athletics",
-    "position": "Right Fielder",
-    "eligible_positions": [
-      "Right Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917919.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/10/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Burlington, NJ",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4917919",
-    "name": "Lawrence Butler",
-    "team": "Athletics",
-    "position": "Right Fielder",
-    "eligible_positions": [
-      "Right Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4917919.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 210 lbs",
-      "birthdate": "7/10/2000",
-      "bat_throw": "Left/Right",
-      "birthplace": "Burlington, NJ",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "42462",
-    "name": "Brenton Doyle",
-    "team": "Colorado Rockies",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42462.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 220 lbs",
-      "birthdate": "5/14/1998",
+      "height_weight": "5' 10\", 165 lbs",
+      "birthdate": "9/18/2000",
       "bat_throw": "Right/Right",
-      "birthplace": "Warrenton, VA",
+      "birthplace": "Willemstad, Curacao",
       "status": "Active"
     }
   },
   {
-    "id": "42462",
-    "name": "Brenton Doyle",
-    "team": "Colorado Rockies",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 3\", 220 lbs",
-      "birthdate": "5/14/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Warrenton, VA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "42462",
-    "name": "Brenton Doyle",
-    "team": "Colorado Rockies",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42462.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 220 lbs",
-      "birthdate": "5/14/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Warrenton, VA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "42462",
-    "name": "Brenton Doyle",
-    "team": "Colorado Rockies",
-    "position": "Center Fielder",
-    "eligible_positions": [
-      "Center Fielder"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42462.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 3\", 220 lbs",
-      "birthdate": "5/14/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Warrenton, VA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4719507",
-    "name": "Paul Skenes",
-    "team": "Pittsburgh Pirates",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 6\", 260 lbs",
-      "birthdate": "5/29/2002",
-      "bat_throw": "Right/Right",
-      "birthplace": "Fullerton, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4719507",
-    "name": "Paul Skenes",
-    "team": "Pittsburgh Pirates",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 6\", 260 lbs",
-      "birthdate": "5/29/2002",
-      "bat_throw": "Right/Right",
-      "birthplace": "Fullerton, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4719507",
-    "name": "Paul Skenes",
-    "team": "Pittsburgh Pirates",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 6\", 260 lbs",
-      "birthdate": "5/29/2002",
-      "bat_throw": "Right/Right",
-      "birthplace": "Fullerton, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4719507",
-    "name": "Paul Skenes",
-    "team": "Pittsburgh Pirates",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 6\", 260 lbs",
-      "birthdate": "5/29/2002",
-      "bat_throw": "Right/Right",
-      "birthplace": "Fullerton, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41054",
-    "name": "Cole Ragans",
-    "team": "Kansas City Royals",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41054.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "12/12/1997",
-      "bat_throw": "Left/Left",
-      "birthplace": "Crawfordville, FL",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41054",
-    "name": "Cole Ragans",
-    "team": "Kansas City Royals",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41054.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "12/12/1997",
-      "bat_throw": "Left/Left",
-      "birthplace": "Crawfordville, FL",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41054",
-    "name": "Cole Ragans",
-    "team": "Kansas City Royals",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41054.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "12/12/1997",
-      "bat_throw": "Left/Left",
-      "birthplace": "Crawfordville, FL",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41054",
-    "name": "Cole Ragans",
-    "team": "Kansas City Royals",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41054.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "12/12/1997",
-      "bat_throw": "Left/Left",
-      "birthplace": "Crawfordville, FL",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "39635",
-    "name": "Hunter Greene",
-    "team": "Cincinnati Reds",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39635.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 242 lbs",
-      "birthdate": "8/6/1999",
-      "bat_throw": "Right/Right",
-      "birthplace": "Los Angeles, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39635",
-    "name": "Hunter Greene",
-    "team": "Cincinnati Reds",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39635.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 242 lbs",
-      "birthdate": "8/6/1999",
-      "bat_throw": "Right/Right",
-      "birthplace": "Los Angeles, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39635",
-    "name": "Hunter Greene",
-    "team": "Cincinnati Reds",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39635.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 242 lbs",
-      "birthdate": "8/6/1999",
-      "bat_throw": "Right/Right",
-      "birthplace": "Los Angeles, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39635",
-    "name": "Hunter Greene",
-    "team": "Cincinnati Reds",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 5\", 242 lbs",
-      "birthdate": "8/6/1999",
-      "bat_throw": "Right/Right",
-      "birthplace": "Los Angeles, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4424862",
-    "name": "Spencer Schwellenbach",
-    "team": "Atlanta Braves",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4424862.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 1\", 200 lbs",
-      "birthdate": "5/31/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Saginaw, MI",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4424862",
-    "name": "Spencer Schwellenbach",
-    "team": "Atlanta Braves",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4424862.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 1\", 200 lbs",
-      "birthdate": "5/31/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Saginaw, MI",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4424862",
-    "name": "Spencer Schwellenbach",
-    "team": "Atlanta Braves",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4424862.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 1\", 200 lbs",
-      "birthdate": "5/31/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Saginaw, MI",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4424862",
-    "name": "Spencer Schwellenbach",
-    "team": "Atlanta Braves",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 1\", 200 lbs",
-      "birthdate": "5/31/2000",
-      "bat_throw": "Right/Right",
-      "birthplace": "Saginaw, MI",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4717803",
-    "name": "Hunter Brown",
+    "id": "39706",
+    "name": "Isaac Paredes",
     "team": "Houston Astros",
-    "position": "Starting Pitcher",
+    "position": "3B",
     "eligible_positions": [
-      "Starting Pitcher"
+      "3B"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4717803.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39706.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 2\", 220 lbs",
-      "birthdate": "8/29/1998",
+      "height_weight": "5' 11\", 213 lbs",
+      "birthdate": "2/18/1999",
       "bat_throw": "Right/Right",
-      "birthplace": "Detroit, MI",
+      "birthplace": "Hermosillo, Mexico",
       "status": "Active"
     }
   },
   {
-    "id": "4717803",
-    "name": "Hunter Brown",
+    "id": "5201569",
+    "name": "Kristian Campbell",
+    "team": "Boston Red Sox",
+    "position": "2B",
+    "eligible_positions": [
+      "2B",
+      "SS",
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/5201569.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 191 lbs",
+      "birthdate": "6/28/2002",
+      "bat_throw": "Right/Right",
+      "birthplace": "Chattanooga, TN",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "34923",
+    "name": "Taylor Ward",
+    "team": "Los Angeles Angels",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34923.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 200 lbs",
+      "birthdate": "12/14/1993",
+      "bat_throw": "Right/Right",
+      "birthplace": "Dayton, OH",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "36084",
+    "name": "Anthony Santander",
+    "team": "Toronto Blue Jays",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36084.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 230 lbs",
+      "birthdate": "10/19/1994",
+      "bat_throw": "Both/Right",
+      "birthplace": "Margarita Island, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4686066",
+    "name": "Tyler Soderstrom",
+    "team": "Athletics",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4686066.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 200 lbs",
+      "birthdate": "11/24/2001",
+      "bat_throw": "Left/Right",
+      "birthplace": "Turlock, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41179",
+    "name": "Brice Turang",
+    "team": "Milwaukee Brewers",
+    "position": "2B",
+    "eligible_positions": [
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41179.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 190 lbs",
+      "birthdate": "11/21/1999",
+      "bat_throw": "Left/Right",
+      "birthplace": "Corona, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4717833",
+    "name": "Pete Crow-Armstrong",
+    "team": "Chicago Cubs",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4717833.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 184 lbs",
+      "birthdate": "3/25/2002",
+      "bat_throw": "Left/Left",
+      "birthplace": "Sherman Oaks, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41180",
+    "name": "Triston Casas",
+    "team": "Boston Red Sox",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41180.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 4\", 244 lbs",
+      "birthdate": "1/15/2000",
+      "bat_throw": "Left/Right",
+      "birthplace": "Miami, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "4109109",
+    "name": "Vinnie Pasquantino",
+    "team": "Kansas City Royals",
+    "position": "1B",
+    "eligible_positions": [
+      "1B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4109109.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 245 lbs",
+      "birthdate": "10/10/1997",
+      "bat_throw": "Left/Left",
+      "birthplace": "Richmond, VA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42179",
+    "name": "Riley Greene",
+    "team": "Detroit Tigers",
+    "position": "OF",
+    "eligible_positions": [
+      "OF",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42179.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 200 lbs",
+      "birthdate": "9/28/2000",
+      "bat_throw": "Left/Left",
+      "birthplace": "Orlando, FL",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41219",
+    "name": "Nico Hoerner",
+    "team": "Chicago Cubs",
+    "position": "2B",
+    "eligible_positions": [
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41219.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 200 lbs",
+      "birthdate": "5/13/1997",
+      "bat_throw": "Right/Right",
+      "birthplace": "Oakland, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41326",
+    "name": "Xavier Edwards",
+    "team": "Miami Marlins",
+    "position": "SS",
+    "eligible_positions": [
+      "SS"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41326.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 8\", 175 lbs",
+      "birthdate": "8/9/1999",
+      "bat_throw": "Both/Right",
+      "birthplace": "Mineola, NY",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41034",
+    "name": "Mark Vientos",
+    "team": "New York Mets",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41034.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 185 lbs",
+      "birthdate": "12/11/1999",
+      "bat_throw": "Right/Right",
+      "birthplace": "Norwalk, CT",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41273",
+    "name": "Jeremy Pena",
     "team": "Houston Astros",
-    "position": "Starting Pitcher",
+    "position": "SS",
     "eligible_positions": [
-      "Starting Pitcher"
+      "SS"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41273.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 2\", 220 lbs",
-      "birthdate": "8/29/1998",
+      "height_weight": "6' 1\", 202 lbs",
+      "birthdate": "9/22/1997",
       "bat_throw": "Right/Right",
-      "birthplace": "Detroit, MI",
+      "birthplace": "Santo Domingo, Dominican Republic",
       "status": "Active"
     }
   },
   {
-    "id": "4717803",
-    "name": "Hunter Brown",
-    "team": "Houston Astros",
-    "position": "Starting Pitcher",
+    "id": "4666100",
+    "name": "Zach Neto",
+    "team": "Los Angeles Angels",
+    "position": "SS",
     "eligible_positions": [
-      "Starting Pitcher"
+      "SS"
     ],
     "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4666100.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 2\", 220 lbs",
-      "birthdate": "8/29/1998",
+      "height_weight": "5' 11\", 185 lbs",
+      "birthdate": "1/31/2001",
       "bat_throw": "Right/Right",
-      "birthplace": "Detroit, MI",
+      "birthplace": "Miami, FL",
       "status": "Active"
     }
   },
   {
-    "id": "4717803",
-    "name": "Hunter Brown",
-    "team": "Houston Astros",
-    "position": "Starting Pitcher",
+    "id": "32150",
+    "name": "Trevor Story",
+    "team": "Boston Red Sox",
+    "position": "SS",
     "eligible_positions": [
-      "Starting Pitcher"
+      "SS"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4717803.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32150.png&h=120&w=120&scale=crop",
     "bio_data": {
-      "height_weight": "6' 2\", 220 lbs",
-      "birthdate": "8/29/1998",
+      "height_weight": "6' 1\", 209 lbs",
+      "birthdate": "11/15/1992",
       "bat_throw": "Right/Right",
-      "birthplace": "Detroit, MI",
+      "birthplace": "Irving, TX",
       "status": "Active"
     }
   },
   {
-    "id": "32685",
-    "name": "Max Fried",
-    "team": "New York Yankees",
-    "position": "Starting Pitcher",
+    "id": "38980",
+    "name": "Bryan Reynolds",
+    "team": "Pittsburgh Pirates",
+    "position": "OF",
     "eligible_positions": [
-      "Starting Pitcher"
+      "OF",
+      "DH"
     ],
     "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32685.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "1/18/1994",
-      "bat_throw": "Left/Left",
-      "birthplace": "Santa Monica, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32685",
-    "name": "Max Fried",
-    "team": "New York Yankees",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32685.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "1/18/1994",
-      "bat_throw": "Left/Left",
-      "birthplace": "Santa Monica, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32685",
-    "name": "Max Fried",
-    "team": "New York Yankees",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32685.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "1/18/1994",
-      "bat_throw": "Left/Left",
-      "birthplace": "Santa Monica, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "32685",
-    "name": "Max Fried",
-    "team": "New York Yankees",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32685.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 190 lbs",
-      "birthdate": "1/18/1994",
-      "bat_throw": "Left/Left",
-      "birthplace": "Santa Monica, CA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4730225",
-    "name": "Mason Miller",
-    "team": "Athletics",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4730225.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "8/24/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Pittsburgh, PA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4730225",
-    "name": "Mason Miller",
-    "team": "Athletics",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "8/24/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Pittsburgh, PA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4730225",
-    "name": "Mason Miller",
-    "team": "Athletics",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "8/24/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Pittsburgh, PA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "4730225",
-    "name": "Mason Miller",
-    "team": "Athletics",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4730225.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "8/24/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Pittsburgh, PA",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "41743",
-    "name": "Emmanuel Clase",
-    "team": "Cleveland Guardians",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 2\", 206 lbs",
-      "birthdate": "3/18/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Rio San Juan, Dominican Republic",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41743",
-    "name": "Emmanuel Clase",
-    "team": "Cleveland Guardians",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41743.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 2\", 206 lbs",
-      "birthdate": "3/18/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Rio San Juan, Dominican Republic",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41743",
-    "name": "Emmanuel Clase",
-    "team": "Cleveland Guardians",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 2\", 206 lbs",
-      "birthdate": "3/18/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Rio San Juan, Dominican Republic",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "41743",
-    "name": "Emmanuel Clase",
-    "team": "Cleveland Guardians",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41743.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 2\", 206 lbs",
-      "birthdate": "3/18/1998",
-      "bat_throw": "Right/Right",
-      "birthplace": "Rio San Juan, Dominican Republic",
-      "status": "Day-To-Day"
-    }
-  },
-  {
-    "id": "35135",
-    "name": "Tanner Scott",
-    "team": "Los Angeles Dodgers",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35135.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 235 lbs",
-      "birthdate": "7/22/1994",
-      "bat_throw": "Right/Left",
-      "birthplace": "Warren, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35135",
-    "name": "Tanner Scott",
-    "team": "Los Angeles Dodgers",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35135.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 235 lbs",
-      "birthdate": "7/22/1994",
-      "bat_throw": "Right/Left",
-      "birthplace": "Warren, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35135",
-    "name": "Tanner Scott",
-    "team": "Los Angeles Dodgers",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35135.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 235 lbs",
-      "birthdate": "7/22/1994",
-      "bat_throw": "Right/Left",
-      "birthplace": "Warren, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35135",
-    "name": "Tanner Scott",
-    "team": "Los Angeles Dodgers",
-    "position": "Relief Pitcher",
-    "eligible_positions": [
-      "Relief Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35135.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 235 lbs",
-      "birthdate": "7/22/1994",
-      "bat_throw": "Right/Left",
-      "birthplace": "Warren, OH",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "33748",
-    "name": "Blake Snell",
-    "team": "Los Angeles Dodgers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33748.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 225 lbs",
-      "birthdate": "12/4/1992",
-      "bat_throw": "Left/Left",
-      "birthplace": "Seattle, WA",
-      "status": "15-Day IL"
-    }
-  },
-  {
-    "id": "33748",
-    "name": "Blake Snell",
-    "team": "Los Angeles Dodgers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33748.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 225 lbs",
-      "birthdate": "12/4/1992",
-      "bat_throw": "Left/Left",
-      "birthplace": "Seattle, WA",
-      "status": "15-Day IL"
-    }
-  },
-  {
-    "id": "33748",
-    "name": "Blake Snell",
-    "team": "Los Angeles Dodgers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 4\", 225 lbs",
-      "birthdate": "12/4/1992",
-      "bat_throw": "Left/Left",
-      "birthplace": "Seattle, WA",
-      "status": "15-Day IL"
-    }
-  },
-  {
-    "id": "33748",
-    "name": "Blake Snell",
-    "team": "Los Angeles Dodgers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33748.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 4\", 225 lbs",
-      "birthdate": "12/4/1992",
-      "bat_throw": "Left/Left",
-      "birthplace": "Seattle, WA",
-      "status": "15-Day IL"
-    }
-  },
-  {
-    "id": "39825",
-    "name": "Freddy Peralta",
-    "team": "Milwaukee Brewers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39825.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 198 lbs",
-      "birthdate": "6/4/1996",
-      "bat_throw": "Right/Right",
-      "birthplace": "Moca, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39825",
-    "name": "Freddy Peralta",
-    "team": "Milwaukee Brewers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39825.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 198 lbs",
-      "birthdate": "6/4/1996",
-      "bat_throw": "Right/Right",
-      "birthplace": "Moca, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39825",
-    "name": "Freddy Peralta",
-    "team": "Milwaukee Brewers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39825.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 198 lbs",
-      "birthdate": "6/4/1996",
-      "bat_throw": "Right/Right",
-      "birthplace": "Moca, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "39825",
-    "name": "Freddy Peralta",
-    "team": "Milwaukee Brewers",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39825.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 0\", 198 lbs",
-      "birthdate": "6/4/1996",
-      "bat_throw": "Right/Right",
-      "birthplace": "Moca, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35241",
-    "name": "Sandy Alcantara",
-    "team": "Miami Marlins",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "9/7/1995",
-      "bat_throw": "Right/Right",
-      "birthplace": "Azua Province, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35241",
-    "name": "Sandy Alcantara",
-    "team": "Miami Marlins",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35241.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "9/7/1995",
-      "bat_throw": "Right/Right",
-      "birthplace": "Azua Province, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35241",
-    "name": "Sandy Alcantara",
-    "team": "Miami Marlins",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35241.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "9/7/1995",
-      "bat_throw": "Right/Right",
-      "birthplace": "Azua Province, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "35241",
-    "name": "Sandy Alcantara",
-    "team": "Miami Marlins",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35241.png&w=350&h=254",
-    "bio_data": {
-      "height_weight": "6' 5\", 200 lbs",
-      "birthdate": "9/7/1995",
-      "bat_throw": "Right/Right",
-      "birthplace": "Azua Province, Dominican Republic",
-      "status": "Active"
-    }
-  },
-  {
-    "id": "42450",
-    "name": "Joe Ryan",
-    "team": "Minnesota Twins",
-    "position": "Starting Pitcher",
-    "eligible_positions": [
-      "Starting Pitcher"
-    ],
-    "stats": null,
-    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42450.png&w=350&h=254",
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/38980.png&h=120&w=120&scale=crop",
     "bio_data": {
       "height_weight": "6' 2\", 205 lbs",
-      "birthdate": "6/5/1996",
+      "birthdate": "1/27/1995",
+      "bat_throw": "Both/Right",
+      "birthplace": "Baltimore, MD",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32758",
+    "name": "Christian Walker",
+    "team": "Houston Astros",
+    "position": "1B",
+    "eligible_positions": [
+      "1B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32758.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 11\", 208 lbs",
+      "birthdate": "3/28/1991",
+      "bat_throw": "Right/Right",
+      "birthplace": "Norristown, PA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42047",
+    "name": "Logan O'Hoppe",
+    "team": "Los Angeles Angels",
+    "position": "C",
+    "eligible_positions": [
+      "C"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42047.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 185 lbs",
+      "birthdate": "2/9/2000",
+      "bat_throw": "Right/Right",
+      "birthplace": "West Islip, NY",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "31261",
+    "name": "Nolan Arenado",
+    "team": "St. Louis Cardinals",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31261.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 2\", 215 lbs",
+      "birthdate": "4/16/1991",
+      "bat_throw": "Right/Right",
+      "birthplace": "Newport Beach, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "39882",
+    "name": "Jake Burger",
+    "team": "Texas Rangers",
+    "position": "1B",
+    "eligible_positions": [
+      "1B",
+      "3B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39882.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 230 lbs",
+      "birthdate": "4/10/1996",
+      "bat_throw": "Right/Right",
+      "birthplace": "St. Louis, MO",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42417",
+    "name": "Bryson Stott",
+    "team": "Philadelphia Phillies",
+    "position": "2B",
+    "eligible_positions": [
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42417.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 200 lbs",
+      "birthdate": "10/6/1997",
+      "bat_throw": "Left/Right",
+      "birthplace": "Las Vegas, NV",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "33857",
+    "name": "Matt Chapman",
+    "team": "San Francisco Giants",
+    "position": "3B",
+    "eligible_positions": [
+      "3B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33857.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 1\", 225 lbs",
+      "birthdate": "4/28/1993",
+      "bat_throw": "Right/Right",
+      "birthplace": "Victorville, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41996",
+    "name": "Steven Kwan",
+    "team": "Cleveland Guardians",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41996.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 8\", 170 lbs",
+      "birthdate": "9/5/1997",
+      "bat_throw": "Left/Left",
+      "birthplace": "Los Gatos, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32177",
+    "name": "J.T. Realmuto",
+    "team": "Philadelphia Phillies",
+    "position": "C",
+    "eligible_positions": [
+      "C"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32177.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 212 lbs",
+      "birthdate": "3/18/1991",
+      "bat_throw": "Right/Right",
+      "birthplace": "Del City, OK",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "31127",
+    "name": "Salvador Perez",
+    "team": "Kansas City Royals",
+    "position": "C",
+    "eligible_positions": [
+      "C",
+      "1B",
+      "DH"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31127.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 3\", 255 lbs",
+      "birthdate": "5/10/1990",
+      "bat_throw": "Right/Right",
+      "birthplace": "Valencia, Venezuela",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "32146",
+    "name": "Marcus Semien",
+    "team": "Texas Rangers",
+    "position": "2B",
+    "eligible_positions": [
+      "2B"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32146.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 0\", 195 lbs",
+      "birthdate": "9/17/1990",
       "bat_throw": "Right/Right",
       "birthplace": "San Francisco, CA",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "42401",
+    "name": "Jasson Dominguez",
+    "team": "New York Yankees",
+    "position": "OF",
+    "eligible_positions": [
+      "OF"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/42401.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "5' 9\", 190 lbs",
+      "birthdate": "2/7/2003",
+      "bat_throw": "Both/Right",
+      "birthplace": "Esperanza, Dominican Republic",
+      "status": "Active"
+    }
+  },
+  {
+    "id": "41172",
+    "name": "Brady Singer",
+    "team": "Cincinnati Reds",
+    "position": "SP",
+    "eligible_positions": [
+      "SP"
+    ],
+    "stats": null,
+    "image_url": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/41172.png&h=120&w=120&scale=crop",
+    "bio_data": {
+      "height_weight": "6' 5\", 215 lbs",
+      "birthdate": "8/4/1996",
+      "bat_throw": "Right/Right",
+      "birthplace": "Leesburg, FL",
       "status": "Active"
     }
   }

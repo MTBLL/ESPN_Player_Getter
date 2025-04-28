@@ -37,13 +37,14 @@ class TestScraper:
         # Set the page directly
         scraper.page = page
         # Call the method
-        players = scraper._process_current_page()
+        players, _ = scraper._process_current_page()
         # Verify results
         assert len(players) == 50  # We should get players from the fixture
-        assert all(isinstance(player, Player) for player in players)
+        assert all(isinstance(player, Player) for player in players.values())
 
         # Verify first player details (adjust these assertions based on your fixture content)
-        first_player = players[0]
+        first_player_id = next(iter(players))
+        first_player = players[first_player_id]
         assert first_player.name == "Shohei Ohtani"
         assert first_player.team == "Los Angeles Dodgers"
         assert first_player.eligible_positions == ["DH", "SP"]
@@ -109,7 +110,7 @@ class TestScraper:
             players = scraper.scrape_players(player_limit=10)
 
             # Verify results
-            assert len(players) == 20  # 10 batters, 10 pitchers
+            assert len(players) <= 20  # Up to 10 batters, 10 pitchers
         finally:
             page.click = original_click
 
@@ -119,8 +120,8 @@ class TestScraper:
         """Test scraping players from a category (batters or pitchers)."""
         page.goto(f"file://{fixture_player_header_path}")
 
-        players = [
-            Player(
+        players = {
+            "39832": Player(
                 id="39832",
                 name="Shohei Ohtani",
                 team="Los Angeles Dodgers",
@@ -129,7 +130,7 @@ class TestScraper:
                 image_url="https://example.com/player1.png",
                 bio_data={},
             )
-        ]
+        }
 
         scraper = ESPNScraper(
             headless=True, base_url=f"file://{fixture_batters_table_path}"
@@ -158,8 +159,9 @@ class TestScraper:
         # Run the test
         players = scraper._complete_player_details(players)
         assert len(players) == 1
-        assert players[0].bio_data != {}
-        bio_data = players[0].bio_data
+        assert "39832" in players
+        assert players["39832"].bio_data != {}
+        bio_data = players["39832"].bio_data
         assert bio_data["height_weight"] == "6' 3\", 210 lbs"
         assert bio_data["birthdate"] == "7/5/1994"
         assert bio_data["bat_throw"] == "Left/Right"

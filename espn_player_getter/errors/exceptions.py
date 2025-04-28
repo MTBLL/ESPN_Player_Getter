@@ -1,0 +1,2 @@
+class PlayerNotLoadedError(Exception):
+    pass

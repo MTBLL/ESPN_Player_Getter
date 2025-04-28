@@ -11,8 +11,8 @@ from espn_player_getter.models.player import Player
 @pytest.fixture
 def sample_players():
     """Create sample players for testing."""
-    return [
-        Player(
+    return {
+        "12345": Player(
             id="12345",
             name="Mike Trout",
             team="LAA",
@@ -27,7 +27,7 @@ def sample_players():
                 "status": "Active"
             }
         ),
-        Player(
+        "67890": Player(
             id="67890",
             name="Aaron Judge",
             team="NYY",
@@ -43,7 +43,7 @@ def sample_players():
                 "status": "Active"
             }
         )
-    ]
+    }
 
 
 def test_save_and_load_players(sample_players):
@@ -68,19 +68,20 @@ def test_save_and_load_players(sample_players):
         # Verify loaded players match original players
         assert len(loaded_players) == len(sample_players)
         
-        # Check first player
-        assert loaded_players[0].id == sample_players[0].id
-        assert loaded_players[0].name == sample_players[0].name
-        assert loaded_players[0].team == sample_players[0].team
-        assert loaded_players[0].image_url == sample_players[0].image_url
-        assert loaded_players[0].bio_data == sample_players[0].bio_data
-        
-        # Check second player
-        assert loaded_players[1].id == sample_players[1].id
-        assert loaded_players[1].name == sample_players[1].name
-        assert loaded_players[1].stats == sample_players[1].stats
-        assert loaded_players[1].image_url == sample_players[1].image_url
-        assert loaded_players[1].bio_data == sample_players[1].bio_data
+        # Check players match by ID
+        for player_id, original_player in sample_players.items():
+            assert player_id in loaded_players
+            loaded_player = loaded_players[player_id]
+            
+            assert loaded_player.id == original_player.id
+            assert loaded_player.name == original_player.name
+            assert loaded_player.team == original_player.team
+            assert loaded_player.image_url == original_player.image_url
+            assert loaded_player.bio_data == original_player.bio_data
+            
+            # Check stats if they exist
+            if hasattr(original_player, 'stats') and original_player.stats:
+                assert loaded_player.stats == original_player.stats
     finally:
         # Clean up temporary file
         os.unlink(temp_file)
